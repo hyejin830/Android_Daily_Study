@@ -12,6 +12,8 @@
 -	안드로이드에서 사용되는 모든 뷰는 View 클래스 상속
 -	종류 : 버튼, 텍스트, 리시트, 그리드, 이미지, 체크박스 등등
 
+![view_class_diagram](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day2/image/view_class_diagram.png)
+
 * * *
 ## 안드로이드 뷰 (View)
 
