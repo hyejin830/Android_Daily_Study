@@ -1,8 +1,16 @@
 ## 개발 환경 셋팅
 #### 1. JDK 설치
    - 환경 변수 설정
+   ```
+   path 환경변수에 %JAVA_HOME%\bin; 추가
+
+	JAVA_HOME 변수 생성 
+	JAVA_HOME 값은 jdk가 설치된 경로로 설정
+		C:\Program Files\Java\jdk1.8.0_201
+   ```
 #### 2. Android Studio 설치
- 
+    - Virutal Machine 설치
+    
 ## 기본 프로젝트 생성 연습
 #### 1.메인 화면 구성
     app/res/layout/activity_main.xml	: 
