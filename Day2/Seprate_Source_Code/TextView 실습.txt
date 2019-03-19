@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textColor 加己"
+        android:textColor="#00FF00"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textSize 加己" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="typeface 加己"
+        android:typeface="serif"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textStyle 加己"
+        android:textStyle="italic|bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 singleLine 加己 "
+        android:singleLine="true"/>
+</LinearLayout>
