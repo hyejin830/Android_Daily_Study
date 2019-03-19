@@ -2,7 +2,7 @@
 android study (Java)
 
 ```
-- Summary : 강의 내용 정리
+- summary : 강의 내용 정리
 - project : 안드로이드 프로젝트 폴더
 ```
 
