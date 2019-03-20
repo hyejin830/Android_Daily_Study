@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 switch (v.getId()){
                     case R.id.btn_check:
-                        String id = editid.getText().toString();;
+                        String id = editid.getText().toString();
                         String pw = editpw.getText().toString();
 
                         textid.setText("입력하신 ID는 "+id+"입니다");
