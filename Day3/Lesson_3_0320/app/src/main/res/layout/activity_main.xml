@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:orientation="horizontal"
+ tools:context=".MainActivity">
+
+
+     =============================================
+                       id,pw 실습
+     =============================================
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="ID"
+     android:textSize="30dp"/>
+
+ <EditText
+     android:id="@+id/et_id"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" />
+
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="PW"
+     android:textSize="30dp"/>
+
+ <EditText
+     android:id="@+id/et_pw"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" />
+
+ <Button
+     android:id="@+id/btn_check"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="로그인"
+     android:textSize="30dp"/>
+
+ <TextView
+     android:id="@+id/tv_id"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="입력하신 ID는"
+     android:textSize="30dp"/>
+
+ <TextView
+     android:id="@+id/tv_pw"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="입력하신 PW는"
+     android:textSize="30dp"/>
+
+     =============================================
+                  layout_weight 예제
+     =============================================
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="1">
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="버튼1"/>
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="2">
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="버튼2"/>
+
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="1">
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="버튼3"/>
+
+ </LinearLayout>
+
+
+     =============================================
+                  layout_weight 실습
+     =============================================
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_dark"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:background="@android:color/holo_blue_dark">
+ </LinearLayout>
+
+
+ =============================================
+                 baselineAligned 실습
+ =============================================
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="버튼1"
+     android:textSize="20dp"/>
+
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="버튼2"
+     android:textSize="40dp"/>
+
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="버튼3"
+     android:textSize="60dp"/>
+
+  =============================================
+                  layout_weight 실습2
+  =============================================
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="horizontal"
+     android:background="@android:color/black"
+     android:layout_weight="1">
+
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:layout_weight="1">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@android:color/holo_red_dark"
+         android:layout_weight="3">
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@android:color/holo_green_light"
+         android:layout_weight="4">
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@android:color/holo_orange_light"
+         android:layout_weight="4">
+
+     </LinearLayout>
+
+ </LinearLayout>
+
+
+</LinearLayout>
+
+
+  =============================================
+                RelativeLayout 연습
+  =============================================
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="가운데 위쪽"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="가운데 왼쪽"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="가운데 오른쪽"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="가운데 아래쪽"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="중앙"/>
+
+</RelativeLayout>
+
+
+
+    =============================================
+        기준이 하나인 경우의 RelativeLayout
+    =============================================
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/base"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="기준 버튼"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/base"
+        android:layout_toLeftOf="@id/base"
+        android:text="1번"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/base"
+        android:layout_alignBaseline="@id/base"
+        android:text="2번"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/base"
+        android:layout_toLeftOf="@id/base"
+        android:text="3번"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/base"
+        android:layout_alignStart="@id/base"
+        android:text="4번"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/base"
+        android:layout_alignEnd="@id/base"
+        android:text="5번"/>
+
+
+</RelativeLayout>
+
+    =============================================
+        기준이 두개이상인 경우의 RelativeLayout
+    =============================================
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/base1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="기준버튼1" />
+
+    <Button
+        android:id="@+id/base2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="기준버튼2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/base1"
+        android:text="1번"/>
+</RelativeLayout>
+
+    =============================================
+     LinearLayout, RelativeLayout 두가지 버전 실습
+    =============================================
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="전화번호"
+            android:textSize="30dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="000-0000-0000"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="입력"
+            android:textSize="20dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="취소"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화번호"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/et_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="000-0000-0000"
+        android:textSize="25dp"
+        android:layout_toRightOf="@id/tv_tel"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="입력"
+        android:textSize="20dp"
+        android:layout_below="@id/et_tel"
+        android:layout_toLeftOf="@id/bt_cancel"/>
+
+    <Button
+        android:id="@+id/bt_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:textSize="20dp"
+        android:layout_below="@id/et_tel"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
