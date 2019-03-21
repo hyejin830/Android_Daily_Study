@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
 > UI 구현
 
- <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day4/images/4.png" width="20%"></img>
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day4/images/5.png" width="20%"></img>
  
 [코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day4/text/Calculator_xml.txt)
 
