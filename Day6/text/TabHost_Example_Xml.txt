@@ -1,0 +1,55 @@
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@+id/tab_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/tab_song"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f00000"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_artist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f00000"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_album"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f00000"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
