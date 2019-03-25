@@ -1,0 +1,49 @@
+package com.example.lesson_6_0325;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class MainActivity extends AppCompatActivity{
+
+    EditText etUrl;
+    Button btnGo;
+    WebView webView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        etUrl = (EditText)findViewById(R.id.et_url);
+        btnGo = (Button)findViewById(R.id.bt_go);
+        webView = (WebView)findViewById(R.id.webview);
+
+        webView.setWebViewClient(new MyWebViewClinet());
+
+        // 설정을 줄 수 있다
+        WebSettings webSet = webView.getSettings();
+        webSet.setBuiltInZoomControls(true); // 줌 가능하게
+
+        btnGo.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                webView.loadUrl(etUrl.getText().toString());
+            }
+        });
+    }
+
+    class MyWebViewClinet extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url) {
+            return super.shouldOverrideUrlLoading(view, url);
+        }
+    }
+
+}
+
