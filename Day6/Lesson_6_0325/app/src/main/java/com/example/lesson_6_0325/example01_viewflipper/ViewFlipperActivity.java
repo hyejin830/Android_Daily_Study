@@ -8,7 +8,7 @@ import android.widget.ViewFlipper;
 
 import com.example.lesson_6_0325.R;
 
-public class ViewFlipperActivity extends AppCompatActivity {
+public class ViewFlipperActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btnPrev;
     Button btnNext;
@@ -24,23 +24,21 @@ public class ViewFlipperActivity extends AppCompatActivity {
 
         viewFlipper = (ViewFlipper) findViewById(R.id.viewflipper);
 
-        btnPrev.setOnClickListener(new View.OnClickListener() {
+        btnPrev.setOnClickListener(this);
+        btnNext.setOnClickListener(this);
 
-            @Override
-            public void onClick(View v) {
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_prev:
                 viewFlipper.showPrevious();
-            }
-        });
-
-        btnNext.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
+                break;
+            case R.id.btn_next:
                 viewFlipper.showNext();
-            }
-        });
-
-
+                break;
+        }
     }
 }
 
