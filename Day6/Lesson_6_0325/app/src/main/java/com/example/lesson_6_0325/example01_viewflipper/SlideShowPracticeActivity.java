@@ -8,7 +8,7 @@ import android.widget.ViewFlipper;
 
 import com.example.lesson_6_0325.R;
 
-public class SlideShowPracticeActivity extends AppCompatActivity {
+public class SlideShowPracticeActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btnStart;
     Button btnStop;
@@ -19,28 +19,25 @@ public class SlideShowPracticeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slide_show_practice);
 
-        btnStart = (Button) findViewById(R.id.btn_prev);
-        btnStop = (Button) findViewById(R.id.btn_next);
+        btnStart = (Button) findViewById(R.id.btn_start);
+        btnStop = (Button) findViewById(R.id.btn_stop);
 
         viewFlipper = (ViewFlipper) findViewById(R.id.viewflipper);
 
-        btnStart.setOnClickListener(new View.OnClickListener() {
+        btnStart.setOnClickListener(this);
+        btnStop.setOnClickListener(this);
+    }
 
-            @Override
-            public void onClick(View v) {
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_start:
                 viewFlipper.startFlipping();
-            }
-        });
-
-        btnStop.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
+                break;
+            case R.id.btn_stop:
                 viewFlipper.stopFlipping();
-            }
-        });
-
-
+                break;
+        }
     }
 }
 
