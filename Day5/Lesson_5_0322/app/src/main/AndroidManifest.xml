@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".example06.SlidingDrawerActivity"></activity>
+        <activity android:name=".example05.ScrollViewActivity" />
+        <activity android:name=".example04.MovieRatingActivity" />
+        <activity android:name=".example04.PracticeBarActivity" />
+        <activity android:name=".example03.AutoCompeleteTextViewActivity" />
+        <activity android:name=".example02.ReservationTimeActivity" />
+        <activity android:name=".example01.WidgetExampleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
