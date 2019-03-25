@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lesson_6_0325">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".example04_webview.WebViewActivity"></activity>
+        <activity android:name=".example03_actionbar.ActionBarActivity" />
+        <activity android:name=".example02_tabhost.FourImageTabHostActivity" />
+        <activity android:name=".example02_tabhost.TabHostActivity" />
+        <activity android:name=".example01_viewflipper.SlideShowPracticeActivity" />
+        <activity android:name=".example01_viewflipper.ViewFlipperActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

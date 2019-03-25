@@ -25,3 +25,12 @@ android study (Java)
        - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day4/Summary.md) 
        - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day4/Lesson_4_0321)
        - [seperate code](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day4/text)
+
+5. day5 [2019.03.22]
+      - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/Summary.md)
+      - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day5/Lesson_5_0322)
+      - 수정 사항 : 프로젝트 구조 수정, 이후부터 Sperate Code 는 없음.
+
+6. day6 [2019.03.25]
+      - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day6/Summary.md)
+      - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day6/Lesson_6_0325)
