@@ -14,6 +14,10 @@
         android:gravity="center"/>        
 ```
 
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/images/1.png" width="20%"></img>
+
+ [코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/Lesson_5_0322/app/src/main/java/com/example/lesson_5_0322/example01/WidgetExampleActivity.java)
+
 >Chronometer
 
 ```
@@ -54,6 +58,12 @@
 변수.getCurrentMinute();	                //분 받아오기
 ```
 
+>전체 실습 : 예약 시간 액티비티
+
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/images/10.png" width="20%"></img>
+
+ [코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/Lesson_5_0322/app/src/main/java/com/example/lesson_5_0322/example02/ReservationTimeActivity.java)
+
 #### 2) 자동완성(멀티)텍스트뷰
 
 >AutoCompleteTextView
@@ -78,22 +88,23 @@
 
 ```
 
-// TODO : 변수명 수정하기
 >java파일 적용 코드
 
 ```
 
-String[] items = {"Avengers1","Avengers2","iron man","iron man2"};
+    String[] items = {"Avengers1","Avengers2","iron man","iron man2"};
+    autoCompleteTextView = (AutoCompleteTextView)findViewById(R.id.tv_auto_complete);
+    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, items);
+    autoCompleteTextView.setAdapter(adapter);
 
-auto = (AutoCompleteTextView)findViewById(R.id.autoCompleteTextView1);
-ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, items);
-auto.setAdapter(adapter);
-
-MultiAutoCompleteTextView multi = (MultiAutoCompleteTextView)findViewById(R.id.multiautoCompleteTextView);
-MultiAutoCompleteTextView.CommaTokenizer token = new MultiAutoCompleteTextView.CommaTokenizer();
-multi.setTokenizer(token);
-multi.setAdapter(adapter);
+    multiAutoCompleteTextView = (MultiAutoCompleteTextView)findViewById(R.id.tv_multi_auto_complete);
+    MultiAutoCompleteTextView.CommaTokenizer token = new MultiAutoCompleteTextView.CommaTokenizer();
+    multiAutoCompleteTextView.setTokenizer(token);
+    multiAutoCompleteTextView.setAdapter(adapter);
 ```
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/images/2.png" width="20%"></img> |  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/images/3.png" width="20%"></img>
+
+[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/Lesson_5_0322/app/src/main/java/com/example/lesson_5_0322/example03/AutoCompeleteTextViewActivity.java)
 
 #### 바
 
@@ -128,6 +139,11 @@ multi.setAdapter(adapter);
         android:layout_height="wrap_content" />
 ```
 
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/images/4.png" width="20%"></img> |  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/images/5.png" width="20%"></img>
+
+[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/Lesson_5_0322/app/src/main/java/com/example/lesson_5_0322/example04/PracticeBarActivity.java)
+
+
 #### View Container
 
 >ScrollView : 수직으로 스크롤하는 뷰
@@ -147,3 +163,23 @@ multi.setAdapter(adapter);
 	android:orientation="vertical" >
     ... />
 ```
+
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/images/6.png" width="20%"></img>
+
+ [코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/Lesson_5_0322/app/src/main/java/com/example/lesson_5_0322/example05/ScrollViewActivity.java)
+
+>SlidingDrawer : 서랍처럼 열어서 보여주거나 닫아서 감춤
+
+```
+ <SlidingDrawer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@id/content"       <!-- 내용을 담을 곳 -->
+        android:handle="@id/bt_slider">     <!-- 슬라이딩 액션 버튼 -->
+        ....                            </SlidingDrawer>
+```
+
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/images/8.png" width="20%"></img> |  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/images/9.png" width="20%"></img>
+
+[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day5/Lesson_5_0322/app/src/main/java/com/example/lesson_5_0322/example06/SlidingDrawerActivity.java)
+
