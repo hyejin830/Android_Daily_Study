@@ -49,20 +49,6 @@
             android:text="Dialog Example"
             android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/btn_action_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="action bar example"
-            android:textSize="20dp" />
-
-        <Button
-            android:id="@+id/btn_web_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="web view example"
-            android:textSize="20dp" />
-
     </LinearLayout>
 
 

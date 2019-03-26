@@ -34,3 +34,7 @@ android study (Java)
 6. day6 [2019.03.25]
       - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day6/Summary.md)
       - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day6/Lesson_6_0325)
+
+7. day7 [2019.03.26]
+      - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day7/Summary.md)
+      - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day7/Lesson_7_0326)
