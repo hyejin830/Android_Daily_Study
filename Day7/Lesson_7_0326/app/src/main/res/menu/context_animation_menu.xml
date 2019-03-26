@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_animation1"
+        android:title="애니메이션1" />
+    <item
+        android:id="@+id/item_animation2"
+        android:title="애니메이션2" />
+    <item
+        android:id="@+id/item_animation3"
+        android:title="애니메이션3" />
+    <item
+        android:id="@+id/item_animation4"
+        android:title="애니메이션4" />
+
+</menu>

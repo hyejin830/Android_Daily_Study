@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_movie1"
+        android:title="영화1" />
+    <item
+        android:id="@+id/item_movie2"
+        android:title="영화2" />
+    <item
+        android:id="@+id/item_movie3"
+        android:title="영화3" />
+    <item
+        android:id="@+id/item_movie4"
+        android:title="영화4" />
+
+</menu>
