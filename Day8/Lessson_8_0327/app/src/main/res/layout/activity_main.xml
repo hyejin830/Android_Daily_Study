@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_inflate_dialog_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inflate Dialog Example"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/bt_toast_message_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toast Message Example"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/bt_custom_toast_message_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Toast Message Example"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/bt_resource_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resource File Example"
+        android:textSize="20dp"/>
+
+</LinearLayout>
