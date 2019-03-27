@@ -6,7 +6,8 @@
  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day8/images/1.png" width="20%"></img>| <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day8/images/2.png" width="20%"></img>
  
 
-[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day7/Lesson_8_0327/app/src/main/java/com/example/lesson_8_0327/example01_dialog/DialogExampleActivity.java)
+[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day8/Lessson_8_0327/app/src/main/java/com/example/lessson_8_0327/example01_dialog/DialogExampleActivity.java)
+
 
 #### Toast Message
  : 기본 토스트 메세지로, 리소스 파일을 이용한 토스트 메세지
@@ -15,13 +16,14 @@
 
  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day8/images/3.png" width="20%"></img>
 
-[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day7/Lesson_8_0327/app/src/main/java/com/example/lesson_8_0327/example02_toast/ToastMessageActivity.java)
+[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day8/Lessson_8_0327/app/src/main/java/com/example/lessson_8_0327/example02_toast/ToastMessageActivity.java)
+
 
 - 커스텀 예제
 
  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day8/images/4.png" width="20%"></img>
 
-[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day7/Lesson_8_0327/app/src/main/java/com/example/lesson_8_0327/example02_toast/CustomToastMessageActivity.java)
+[코드로 이동](hhttps://github.com/hyejin830/Android_Daily_Study/blob/master/Day8/Lessson_8_0327/app/src/main/java/com/example/lessson_8_0327/example02_toast/CustomToastMessageActivity.java)
 
 #### Android Resource File
  : res 폴더 아래에 있는 여러가지 파일들, 리소스 파일을 따로 관리할 시, 유지보수 용이
@@ -128,5 +130,5 @@
 
  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day8/images/5.png" width="20%"></img>
 
-[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day7/Lesson_8_0327/app/src/main/java/com/example/lesson_8_0327/example03_resource/ResourceExampleActivity.java)
+[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day8/Lessson_8_0327/app/src/main/java/com/example/lessson_8_0327/example03_resource/ResourceExampleActivity.java)
 
