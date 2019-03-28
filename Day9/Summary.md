@@ -34,22 +34,38 @@ getSystemService() Context내부 메소드
 ```
 #### 2.1 예제
 
+이전화면에서 다음화면으로 넘어가는 예제
+
  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/1.png" width="20%"></img>| <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/2.png" width="20%"></img>
 
- #### 2.2 실습
+ >코드
 
- 2개의 라디오 버튼과 1개의 버튼
- 버튼을 클릭하면 라디오 버튼에서 선택한 항목에 맞게 이동하기 구현
+ [이전화면](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/Lesson_9_0328/app/src/main/java/com/example/lesson_9_0328/example01_intent/PrevIntentExampleActivity.java)
+
+ [다음화면](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/Lesson_9_0328/app/src/main/java/com/example/lesson_9_0328/example01_intent/NextIntentExampleActivity.java)
+
+#### 2.2 실습
+
+2개의 라디오 버튼과 1개의 버튼
+버튼을 클릭하면 라디오 버튼에서 선택한 항목에 맞게 이동하기 구현
 
  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/3.png" width="20%"></img>| <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/4.png" width="20%"></img>
 
 <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/5.png" width="20%"></img>| <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/6.png" width="20%"></img>
 
+>코드
+
+[첫 화면](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/Lesson_9_0328/app/src/main/java/com/example/lesson_9_0328/practice01_intent/StartIntentPracticeActivity.java)
+
+[첫번째 이동 화면](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/Lesson_9_0328/app/src/main/java/com/example/lesson_9_0328/practice01_intent/FirstIntentPracticeActivity.java)
+
+[두번째 이동 화면](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/Lesson_9_0328/app/src/main/java/com/example/lesson_9_0328/practice01_intent/SecondIntentPracticeActivity.java)
+
 ## 3. 라이프사이클
 
 ### 3.1.1 onCreate()
 액티비티가 처음 만들어질 때 호출되는 함수
-어플리케이션이 처음 시작할 때 최초로 한번 실행되는 함수
+어플리케이션이 `처음 시작할 때 최초로 한번 실행`되는 함수
 주로 뷰를 만들거나 리소스를 불러오는 작업 담당
 매개변수로 이전 상태의 정보를 담고있는 Bundle을 제공 (Bundle savedInstanceState)
 
@@ -64,16 +80,16 @@ getSystemService() Context내부 메소드
 액티비티가 멈춰있다가 다시 호출될 때 불리는 함수
 
 ### 3.1.5 onPause()
-다른 액티비티가 호출 되는 경우 현재 액티비티 위에 다른 액티비티가 올라와서 포커스를 잃었을 때 호출되는 함수
+다른 액티비티가 호출 되는 경우 `현재 액티비티 위에 다른 액티비티가 올라와서 포커스를 잃었을 때` 호출되는 함수
 다른 Activity가 호출되기 전에 실행되기 때문에 onPause()함수에서 시간이 많이 소요되는 작업이나, 많은 일을 처리하면 다른 액티비티가 실행되기까지 시간이 오래걸리기 때문에 이곳은 단순 데이터를 저장하는 용도로 사용
 
 ### 3.1.6 onStop()
-액티비티 위에 다른 액티비티가 완전히 올라와 화면에서 100% 가려질 때 호출되는 함수
+액티비티 `위에 다른 액티비티가 완전히 올라와 화면에서 100% 가려질 때` 호출되는 함수
 홈 키를 누르는 경우, 또는 다른 액티비티도 이동이 있는 경우 
 만약 이 상태에서 Activity가 다시 불려지면, onRestart()함수가 호출됨
 
 ### 3.1.7 onDestroy()
-액티비티가 완전히 제거될 때 호출되는 함수
+액티비티가 `완전히 제거될 때 호출`되는 함수
 finish() 메소드를 호출하거나, 시스템 메모리 확보를 위해 호출
 
 #### 생명주기
@@ -84,16 +100,21 @@ finish() 메소드를 호출하거나, 시스템 메모리 확보를 위해 호�
 
 ### 3.2 예제
 
- <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/8.png" width="20%"></img>
+각 함수에 Log를 달아 어플리케이션의 포커스에 따른 함수 호출을 확인한다. 
+
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/8.png"></img>
+
+ [코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/Lesson_9_0328/app/src/main/java/com/example/lesson_9_0328/example02_lifecycle/LifeCycleExampleActivity.java)
 
 ## 4. 액티비티에 인텐트로 데이터 전달
 
 ### 4.1 명시적 인텐트
-다른 액티비티의 이름을 명확히 지정할 때 사용하는 방법
+다른 액티비티의 이름을 `명확히 지정할 때` 사용하는 방법
 
-데이터를 전달받는 액티비티
+데이터를 전달하는 액티비티
 ```
     intent.putExtra("메시지태그","전달 받을 메세지");
+    startActivity(intent);
 ```
 
 데이터를 받는 액티비티
@@ -104,7 +125,44 @@ finish() 메소드를 호출하거나, 시스템 메모리 확보를 위해 호�
 
 ### 4.1.1 예제
 
+메세지태그를 통한 String 값 전달하여 다음 액티비티에 출력한다.
+
  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/9.png" width="20%"></img>| <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/10.png" width="20%"></img>
+
+>코드
+
+ [데이터 보내는 액티비티](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/Lesson_9_0328/app/src/main/java/com/example/lesson_9_0328/example03_intent_pass_on_data/PrevExplicitIntentActivity.java)
+
+ [데이터 받는 액티비티](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/Lesson_9_0328/app/src/main/java/com/example/lesson_9_0328/example03_intent_pass_on_data/NextExplicitIntentActivity.java)
+
+
+ ### 4.2 startActivityForResult
+ 데이터를 받은 액티비티가 finish로 종료하고 이전 액티비티에게 다시 값을 넘겨줄 때 사용
+
+ 데이터를 전달하고 가공한 데이터를 다시 받는 액티비티
+
+```
+    intent.putExtra("메세지 태그","전달 값");
+    startActivityForResult(intent,0);
+```
+
+ `onActivityResult` 메소드를 오버라이딩해줘야 한다.
+
+```
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
+        // 가공받은 데이터를 받는다
+    }
+```
+
+종료하면서 이전 액티비티로 전달하는 액티비티
+
+```
+    intent.putExtra("메세지 태그", 값);
+    setResult(RESULT_OK, intent);
+    finish();
+```
 
 ### 4.1.2 실습
 
@@ -113,4 +171,10 @@ finish() 메소드를 호출하거나, 시스템 메모리 확보를 위해 호�
 3. 계산 값을 출력한다
 
  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/11.png" width="20%"></img>| <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/12.png" width="20%"></img>| <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/images/13.png" width="20%"></img>
+
+>코드
+
+[계산할 값 입력 & 결과 출력 액티비티](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/Lesson_9_0328/app/src/main/java/com/example/lesson_9_0328/practice02_intent_pass_on_data/CalculatorInputAndResultActivity.java)
+
+[계산 액티비티](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day9/Lesson_9_0328/app/src/main/java/com/example/lesson_9_0328/practice02_intent_pass_on_data/CalculatorExecuteActivity.java)
 
