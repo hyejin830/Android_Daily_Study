@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lesson_9_0328">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".practice02_intent_pass_on_data.CalculatorExecuteActivity"></activity>
+        <activity android:name=".practice02_intent_pass_on_data.CalculatorInputAndResultActivity" />
+        <activity android:name=".example03_intent_pass_on_data.PrevExplicitIntentActivity" />
+        <activity android:name=".example03_intent_pass_on_data.NextExplicitIntentActivity" />
+        <activity android:name=".example02_lifecycle.LifeCycleExampleActivity" />
+        <activity android:name=".practice01_intent.SecondIntentPracticeActivity" />
+        <activity android:name=".practice01_intent.FirstIntentPracticeActivity" />
+        <activity android:name=".practice01_intent.StartIntentPracticeActivity" />
+        <activity android:name=".example01_intent.NextIntentExampleActivity" />
+        <activity android:name=".example01_intent.PrevIntentExampleActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
