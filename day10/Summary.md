@@ -37,9 +37,11 @@ URI 객체를 통해 전달
 
 - 이미지 첨부하기
 
- <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day10/images/1.png" width="20%"></img> |  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day10/images/2.png" width="20%"></img> | <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day10/images/3.png" width="20%"></img>| <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day10/images/4.png" width="20%"></img>
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/images/1.png" width="20%"></img> |  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/images/2.png" width="20%"></img> | <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/images/3.png" width="20%"></img>| <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/images/4.png" width="20%"></img>
 
- <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day10/images/5.png" width="20%"></img> |  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day10/images/6.png" width="20%"></img> | <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day10/images/7.png" width="20%"></img>
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/images/5.png" width="20%"></img> |  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/images/6.png" width="20%"></img> | <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/images/7.png" width="20%"></img>
+
+ [코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/Lesson_10_0329/app/src/main/java/com/example/lesson_10_0329/example01_implicit_intent/ImplicitIntentExampleActivity.java)
 
 ## 외부 라이브러리 이용하기 API Use 
 
@@ -100,6 +102,8 @@ gradle이란
 #### 예제
 
 <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day10/images/8.png" width="20%"></img>
+
+[코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/Lesson_10_0329/app/src/main/java/com/example/lesson_10_0329/example02_api_use/ApiUseExampleActivity.java)
 
 아이콘 출처 : https://material.io/tools/icons/?style=baseline
 
