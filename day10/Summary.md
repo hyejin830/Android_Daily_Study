@@ -101,7 +101,7 @@ gradle이란
 
 #### 예제
 
-<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day10/images/8.png" width="20%"></img>
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/images/8.png" width="20%"></img>
 
 [코드로 이동](https://github.com/hyejin830/Android_Daily_Study/blob/master/day10/Lesson_10_0329/app/src/main/java/com/example/lesson_10_0329/example02_api_use/ApiUseExampleActivity.java)
 
