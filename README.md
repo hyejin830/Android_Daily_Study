@@ -4,6 +4,7 @@ android study (Java)
 ```
 - summary : 강의 내용 정리
 - project : 안드로이드 프로젝트 폴더
+- final : 최종 프로젝트 (추가 구현ing)
 - seperate code : xml과 java 코드르 개별적으로 txt파일에 저장
 ```
 
@@ -54,3 +55,4 @@ android study (Java)
 11. day11 [2019.04.01]
       - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day11/Summary.md)
       - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day11/Lesson_11_0401)
+      - [final](https://github.com/hyejin830/Android_Daily_Study/tree/master/Final/Summary.md)

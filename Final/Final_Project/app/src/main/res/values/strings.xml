@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Final_Project</string>
+
+
+    <!-- menu_bottom.xml -->
+    <string name="menu_friend">친구 목록</string>
+    <string name="menu_talk">대화</string>
+    <string name="menu_photo">사진</string>
+    <string name="menu_setting">설정</string>
+
+    <!-- fragment tab -->
+    <string name="friend_fragment_subject">첫번째 프래그먼트</string>
+    <string name="talk_fragment_subject">두번째 프래그먼트</string>
+    <string name="photo_fragment_subject">세번째 프래그먼트</string>
+    <string name="setting_fragment_subject">네번째 프래그먼트</string>
+    <string name="fifth_fragment_subject">다섯번째 프래그먼트</string>
+</resources>
