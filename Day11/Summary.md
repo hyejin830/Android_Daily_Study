@@ -78,5 +78,5 @@ if (height > width) { // 세로 모드일 경우
 }
 ```
 
- <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day11/images/2.png" width="20%"></img> |  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day11/images/3.png" width="20%"></img> | <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day11/images/4.png" width="20%"></img> 
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day11/images/2.png" width="20%"></img> |  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day11/images/3.png" width="20%"></img> | <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day11/images/4.png"></img> 
 
