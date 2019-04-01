@@ -13,68 +13,71 @@ import com.example.lesson_10_0329.R;
 
 public class ImplicitIntentExampleActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnMakePhoneCall;
-    Button btnOpenHomePage;
-    Button btnOpenGoogleMap;
-    Button btnSendMessage;
-    Button btnTakePhoto;
-    Button btnSearchGoogle;
+    private Button doMakePhoneCallButton;
+    private Button doOpenHomePageButton;
+    private Button doOpenGoogleMapButton;
+    private Button doSendMessageButton;
+    private Button doTakePhotoButton;
+    private Button doSearchGoogleButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_implicit_intent_example);
 
-        btnMakePhoneCall = (Button) findViewById(R.id.btn_make_call);
-        btnOpenHomePage = (Button) findViewById(R.id.btn_open_homepage);
-        btnOpenGoogleMap = (Button) findViewById(R.id.btn_open_google_map);
-        btnSendMessage = (Button) findViewById(R.id.btn_send_msg);
-        btnTakePhoto = (Button) findViewById(R.id.btn_take_photo);
-        btnSearchGoogle = (Button) findViewById(R.id.btn_search_google);
+        initView();
+    }
 
-        btnMakePhoneCall.setOnClickListener(this);
-        btnOpenHomePage.setOnClickListener(this);
-        btnOpenGoogleMap.setOnClickListener(this);
-        btnSendMessage.setOnClickListener(this);
-        btnTakePhoto.setOnClickListener(this);
-        btnSearchGoogle.setOnClickListener(this);
+    void initView() {
+        doMakePhoneCallButton = findViewById(R.id.btn_make_call);
+        doOpenHomePageButton = findViewById(R.id.btn_open_homepage);
+        doOpenGoogleMapButton = findViewById(R.id.btn_open_google_map);
+        doSendMessageButton = findViewById(R.id.btn_send_msg);
+        doTakePhotoButton = findViewById(R.id.btn_take_photo);
+        doSearchGoogleButton = findViewById(R.id.btn_search_google);
 
+        doMakePhoneCallButton.setOnClickListener(this);
+        doOpenHomePageButton.setOnClickListener(this);
+        doOpenGoogleMapButton.setOnClickListener(this);
+        doSendMessageButton.setOnClickListener(this);
+        doTakePhotoButton.setOnClickListener(this);
+        doSearchGoogleButton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_make_call:
-                Uri uriMakeCall = Uri.parse("tel:010-0000-0000");
-                Intent intentMakeCall = new Intent(Intent.ACTION_VIEW, uriMakeCall);
-                startActivity(intentMakeCall);
+                Uri MakeCallUri = Uri.parse("tel:010-0000-0000");
+                Intent MakeCallIntent = new Intent(Intent.ACTION_VIEW, MakeCallUri);
+                startActivity(MakeCallIntent);
                 break;
             case R.id.btn_open_homepage:
-                Uri uriOpenHomePage = Uri.parse("http://www.naver.com");
-                Intent intentOpenHomePage = new Intent(Intent.ACTION_VIEW, uriOpenHomePage);
-                startActivity(intentOpenHomePage);
+                Uri OpenHomePageUri = Uri.parse("http://www.naver.com");
+                Intent OpenHomePageIntent = new Intent(Intent.ACTION_VIEW, OpenHomePageUri);
+                startActivity(OpenHomePageIntent);
                 break;
             case R.id.btn_open_google_map:
                 //Uri uriOpenGoogleMap = Uri.parse("geo");
-                Uri uriOpenGoogleMap = Uri.parse("https://www.google.co.kr/maps/place/37%C2%B034'15.5%22N+126%C2%B059'32.5%22E/@37.5709641,126.9918048,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d37.570963!4d126.9923521");
-                Intent intentOpenGoogleMap = new Intent(Intent.ACTION_VIEW, uriOpenGoogleMap);
-                startActivity(intentOpenGoogleMap);
+                Uri OpenGoogleMapUri = Uri.parse("https://www.google.co.kr/maps/place/37%C2%B034'15.5%22N+126%C2%B059'32.5%22E/@37.5709641,126.9918048,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d37.570963!4d126.9923521");
+                Intent OpenGoogleMapIntent = new Intent(Intent.ACTION_VIEW, OpenGoogleMapUri);
+                startActivity(OpenGoogleMapIntent);
                 break;
             case R.id.btn_send_msg:
-                Uri uriSendMsg = Uri.parse(("smsto:" + Uri.encode("010-1234-5678")));
-                Intent intentSendMsg = new Intent(Intent.ACTION_SENDTO, uriSendMsg);
-                intentSendMsg.putExtra("sms_body", "안녕하세요");
-                startActivity(intentSendMsg);
+                Uri SendMsgUri = Uri.parse(("smsto:" + Uri.encode("010-1234-5678")));
+                Intent SendMsgIntent = new Intent(Intent.ACTION_SENDTO, SendMsgUri);
+                SendMsgIntent.putExtra("sms_body", "안녕하세요");
+                startActivity(SendMsgIntent);
                 break;
             case R.id.btn_take_photo:
                 // 기본적인 방법
-                Intent intentTakePhoto = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivity(intentTakePhoto);
+                Intent TakePhotoIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivity(TakePhotoIntent);
                 break;
             case R.id.btn_search_google:
-                Intent intentSearchGoogle = new Intent(Intent.ACTION_WEB_SEARCH);
-                intentSearchGoogle.putExtra(SearchManager.QUERY, "안드로이드");
-                startActivity(intentSearchGoogle);
+                Intent SearchGoogleIntent = new Intent(Intent.ACTION_WEB_SEARCH);
+                SearchGoogleIntent.putExtra(SearchManager.QUERY, "안드로이드");
+                startActivity(SearchGoogleIntent);
                 break;
         }
     }

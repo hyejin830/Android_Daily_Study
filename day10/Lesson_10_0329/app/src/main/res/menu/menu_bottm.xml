@@ -3,28 +3,28 @@
     <item
         android:id="@+id/menu_friend"
         android:icon="@drawable/baseline_account_circle_black_24"
-        android:title="친구목록">
+        android:title="@string/menu_friend">
 
     </item>
 
     <item
         android:id="@+id/menu_talk"
         android:icon="@drawable/baseline_chat_bubble_black_24"
-        android:title="대화">
+        android:title="@string/menu_talk">
 
     </item>
 
     <item
         android:id="@+id/menu_photo"
         android:icon="@drawable/baseline_photo_camera_black_24"
-        android:title="사진">
+        android:title="@string/menu_photo">
 
     </item>
 
     <item
         android:id="@+id/menu_setting"
         android:icon="@drawable/baseline_settings_black_24"
-        android:title="설정">
+        android:title="@string/menu_setting">
 
     </item>
 

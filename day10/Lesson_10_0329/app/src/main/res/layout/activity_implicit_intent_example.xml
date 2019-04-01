@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,35 +10,35 @@
         android:id="@+id/btn_make_call"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="전화 걸기" />
+        android:text="@string/make_call" />
 
     <Button
         android:id="@+id/btn_open_homepage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="홈페이지 열기" />
+        android:text="@string/open_homepage" />
 
     <Button
         android:id="@+id/btn_open_google_map"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="구글 맵 열기" />
+        android:text="@string/open_google_map" />
 
     <Button
         android:id="@+id/btn_send_msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="문자 보내기" />
+        android:text="@string/send_msg" />
 
     <Button
         android:id="@+id/btn_take_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="사진 찍기" />
+        android:text="@string/take_photo" />
 
     <Button
         android:id="@+id/btn_search_google"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="구글 검색하기" />
+        android:text="@string/search_google" />
 </LinearLayout>

@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Lesson_10_0329</string>
+
+    <string name="uri_make_call">tel:010-0000-0000</string>
+
+    <!-- MainActivity.java -->
+    <string name="implicit_intent_example">implicit intent example</string>
+    <string name="api_use_example">api use example</string>
+
+    <!-- activity_implicit_intent_example.xml -->
+    <string name="make_call">전화 걸기</string>
+    <string name="open_homepage">홈페이지 열기</string>
+    <string name="open_google_map">구글 맵 열기</string>
+    <string name="send_msg">문자 보내기</string>
+    <string name="take_photo">사진 찍기</string>
+    <string name="search_google">구글 검색하기</string>
+
+    <!-- menu_bottm.xml -->
+    <string name="menu_friend">친구 목록</string>
+    <string name="menu_talk">대화</string>
+    <string name="menu_photo">사진</string>
+    <string name="menu_setting">설정</string>
+
 </resources>

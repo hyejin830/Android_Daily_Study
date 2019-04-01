@@ -11,11 +11,11 @@
         android:id="@+id/btn_implicit_intent_example"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="implicit intent example" />
+        android:text="@string/implicit_intent_example" />
 
     <Button
         android:id="@+id/btn_api_use_example"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="api use example" />
+        android:text="@string/api_use_example" />
 </LinearLayout>
