@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lesson_11_0401</string>
+    <!-- activity_main.xml -->
+    <string name="fragment_example">Fragment Example</string>
+    <string name="fragment_practice">Fragment Practice</string>
+    <string name="example03">example01</string>
+    <string name="example04">example01</string>
+
+
+    <string name="fragment_example_subject_1">프래그먼트 샘플1</string>
+    <string name="fragment_example_subject_2">프래그먼트 샘플2</string>
+    <string name="fragment_example_subject_3">프래그먼트 샘플3</string>
+    <string name="change_fragment">프래그먼트 변경</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

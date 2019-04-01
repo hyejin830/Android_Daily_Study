@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".practice01_fragment.FragmentPracticeActivity">
+
+    <fragment
+        android:id="@+id/fragment_first_land"
+        android:name="com.example.lesson_11_0401.example01_fragment.ExampleFirstFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <fragment
+        android:id="@+id/fragment_second_land"
+        android:name="com.example.lesson_11_0401.example01_fragment.ExampleSecondFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
