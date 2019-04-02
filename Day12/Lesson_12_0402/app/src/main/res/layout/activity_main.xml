@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_do_start_fragment_life_cycle_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_life_cycle" />
+
+    <Button
+        android:id="@+id/btn_do_start_fragment_data_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_data_change" />
+
+    <Button
+        android:id="@+id/btn_do_start_database_example"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/database_example" />
+
+    <Button
+        android:id="@+id/btn_do_start_external_database_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/external_database_login" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Lesson_12_0402</string>
+
+    <!-- activity_main.xml -->
+    <string name="fragment_life_cycle">Fragment Life Cycle</string>
+    <string name="fragment_data_change">Fragment Data Change</string>
+    <string name="database_example">Database Example</string>
+    <string name="external_database_login">External Database Login</string>
+
+    <!-- EXAMPLE01 : Fragment Life Cycle -->
+
+    <!-- activity_example_fragment_life_cycle.xml -->
+    <string name="change_fragment">프래그먼트 변경</string>
+    <!-- ExampleFragmentLifeCycleActivity.java -->
+    <string name="fragment_life_cycle__activity">라이프 사이클 액티비티 -> </string>
+
+
+    <!-- fragment_example_first.xml -->
+    <string name="fragment_example_subject_1">프래그먼트 샘플1</string>
+    <!-- ExampleFirstFragment.java -->
+    <string name="first_fragment">프래그먼트 1 -> </string>
+
+    <!-- fragment_example_second.xml -->
+    <string name="fragment_example_subject_2">프래그먼트 샘플2</string>
+    <!-- ExampleSecondFragment.java -->
+    <string name="second_fragment">프래그먼트 2 -> </string>
+
+    <!-- EXAMPLE02 : Fragment Data Change  -->
+
+    <!-- activity_example_fragment_data_change.xml -->
+    <string name="change_first_fragment_text">프래그먼트1의 텍스트 변경</string>
+    <string name="change_second_fragment_text">프래그먼트2의 텍스트 변경</string>
+    <!-- ExampleFragmentDataChangeActivity.java -->
+    <string name="data_change_activity">데이터 변경 액티비티 -> </string>
+    <string name="activity_changed">액티비티가 변경시킴</string>
+
+    <!-- fragment_example_data_change_first.xml -->
+    <string name="change_activity_text">액티비티의 텍스트 변경</string>
+    <!-- ExampleDataChangeFirstFragment.java -->
+    <string name="first_fragment_changed">첫번째 프래그먼트가 변경시킴</string>
+
+    <!-- activity & fragment lifecycle -->
+    <string name="on_create_view">onCreateView</string>
+    <string name="on_attach">onAttach</string>
+    <string name="on_create">onCreate</string>
+    <string name="on_activity_created">onActivityCreated</string>
+    <string name="on_start">onStart</string>
+    <string name="on_resume">onResume</string>
+    <string name="on_restart">onRestart</string>
+    <string name="on_stop">onStop</string>
+    <string name="on_pause">onPause</string>
+    <string name="on_destroy">onDestroy</string>
+    <string name="on_destroy_view">onDestroyView</string>
+
+    <!-- EXAMPLE03 : Database  -->
+
+    <!-- activity_database_example.xml -->
+    <!-- TextView -->
+    <string name="database_name_edit_text">아이디 : </string>
+    <string name="database_age_edit_text">나이 : </string>
+    <!-- Button -->
+    <string name="database_init_button">초기화</string>
+    <string name="database_input_button">입력</string>
+    <string name="database_select_button">조회</string>
+    <string name="database_update_button">수정</string>
+    <string name="database_delete_button">삭제</string>
+
+    <!-- DatabaseExampleActivity.java -->
+    <string name="database_example_subject">학생 관리 DB</string>
+    <string name="database_helper_name">testDB</string>
+
+    <!-- EXAMPLE04 : External Database -->
+
+    <!-- activity_external_database_login.xml -->
+    <!-- EditText -->
+    <string name="et_id">아이디</string>
+    <string name="et_pw">패스워드</string>
+    <!-- Button -->
+    <string name="btn_login">로그인</string>
+    <string name="btn_join">회원가입</string>
+
+</resources>
