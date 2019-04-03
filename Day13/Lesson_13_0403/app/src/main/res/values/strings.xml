@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lesson_13_0403</string>
+
+    <!-- activity_external_database_login.xml -->
+    <!-- EditText -->
+    <string name="et_id">아이디</string>
+    <string name="et_pw">패스워드</string>
+    <string name="et_email">이메일</string>
+    <!-- Button -->
+    <string name="btn_login">로그인</string>
+    <string name="btn_join">회원가입</string>
+
+    <!-- activity_main.xml -->
+    <string name="btn_async_task_simple">Async Task Simple</string>
+    <string name="btn_async_task_example">Async Task Example</string>
+</resources>
