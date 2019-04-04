@@ -45,18 +45,23 @@ conn.close();
 ```
 
 첫 화면
+
 <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day14/images/1.png" width="20%"></img> 
 
 회원 가입
+
 <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day14/images/2.png" width="20%"></img> 
 
 DB 
-<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day14/images/0.png" width="50%"></img> 
+
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day14/images/0.png"></img> 
 
 로그인 시도
+
 <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day14/images/4.png" width="20%"></img> 
 
 로그인 완료
+
 <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day14/images/5.png" width="20%"></img> 
 
 
