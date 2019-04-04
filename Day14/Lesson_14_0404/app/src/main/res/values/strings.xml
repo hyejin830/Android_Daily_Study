@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lesson_14_0404</string>
+
+    <!-- EditText -->
+    <string name="et_id">아이디</string>
+    <string name="et_pw">패스워드</string>
+    <string name="et_email">이메일</string>
+    <!-- Button -->
+    <string name="btn_login">로그인</string>
+    <string name="btn_join">회원가입</string>
+
+    <!-- LoginActivity.java -->
+    <!-- JSP file name -->
+    <string name="login_jsp_file_name">Login</string>
+    <string name="join_jsp_file_name">SignUp</string>
+
+    <string name="email_command">email</string>
+    <string name="password_command">password</string>
+    <string name="name_command">name</string>
+    <string name="login_success_msg">로그인 완료</string>
+    <string name="do_request_all_item">모든 항목을 작성해주세요.</string>
+    <string name="result_error">Error</string>
+    <string name="home_activity">홈 액티비티입니다</string>
+    <string name="main_activity">Main Activity</string>
+    <string name="practice_login_signup">Practice login SignUp</string>
+
+</resources>
