@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.lesson_14_0404.MainActivity;
 import com.example.lesson_14_0404.R;
 
 import java.util.concurrent.ExecutionException;

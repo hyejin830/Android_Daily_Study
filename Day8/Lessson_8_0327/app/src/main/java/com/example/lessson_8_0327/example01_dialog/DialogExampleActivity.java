@@ -54,8 +54,6 @@ public class DialogExampleActivity extends AppCompatActivity implements View.OnC
                 dialog.show();
                 break;
         }
-
-
     }
 
     @Override
