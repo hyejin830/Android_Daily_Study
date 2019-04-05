@@ -31,8 +31,11 @@
 
 		if (result == 1) {
 			out.println("회원 가입 성공");
+			System.out.println(email + " " +name +" "+password);
 		} else {
 			out.println("회원 가입 실패");
+			System.out.println("fail");
+			System.out.println(email + " " +name +" "+password);
 		}		
 	} catch(Exception e) {
 		out.println(e.toString());

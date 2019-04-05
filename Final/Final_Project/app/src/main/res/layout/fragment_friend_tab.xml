@@ -5,12 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".fragment.FriendTabFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_friend_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/friend_fragment_subject"
-        android:textSize="30dp" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>

@@ -1,1 +1,1 @@
-select password from users where email='hyejin830@naver.com';
+select * from users;

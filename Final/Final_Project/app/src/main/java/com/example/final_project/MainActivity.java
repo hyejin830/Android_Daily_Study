@@ -1,19 +1,22 @@
 package com.example.final_project;
 
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
+import com.example.final_project.db.DBHelper;
 import com.example.final_project.fragment.FriendTabFragment;
+import com.example.final_project.fragment.PhotoTabFragment;
 import com.example.final_project.fragment.SettingTabFragment;
 import com.example.final_project.fragment.TalkTabFragment;
-import com.example.final_project.fragment.PhotoTabFragment;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -22,6 +25,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
+
+    private DBHelper dbHelper;
+    private SQLiteDatabase sqlDB;
 
     private Fragment friendFragment;
     private Fragment talkFragment;
@@ -32,6 +38,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dbHelper = new DBHelper(getApplicationContext());
+
+        if (checkTable(sqlDB, getString(R.string.friend_table_name))) {
+            sqlDB = dbHelper.getWritableDatabase();
+            dbHelper.onUpgrade(sqlDB, 1, 2);
+            sqlDB.close();
+        }
 
         initView();
     }
@@ -47,6 +61,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
+
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.frame_layout, friendFragment);
+        fragmentTransaction.commit();
+
     }
 
     @Override
@@ -58,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         switch (menuItem.getItemId()) {
             case R.id.menu_friend:
+                friendFragment = new FriendTabFragment();
                 fragmentTransaction.replace(R.id.main_content_linear_layout, friendFragment);
                 fragmentTransaction.commit();
                 break;
@@ -73,6 +94,21 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 fragmentTransaction.replace(R.id.main_content_linear_layout, settingFragment);
                 fragmentTransaction.commit();
                 break;
+        }
+
+        return true;
+    }
+
+    private boolean checkTable(SQLiteDatabase db, String tableName) {
+
+        try {
+            db.rawQuery("SELECT * FROM " + tableName + " limit 1;", null);
+        } catch (SQLiteException e) {
+            e.printStackTrace();
+            return false;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
         }
 
         return true;
