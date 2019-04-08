@@ -66,7 +66,7 @@ dependencies {
 
  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/6.png" width="60%"></img>
 
- <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/7.png" width="60%"></img>
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/7.png" width="20%"></img>
 
 
 #### (2-2) 특정 핸드폰에 보내기
@@ -85,6 +85,6 @@ curl -X POST -H "Authorization: key=[서버키]" -H "Content-Type: application/j
 
 [토큰] : 안드로이드 스튜디오에서 밑에 Logcat에서 token 검색 -> 어플을 실행 했을 때 token이 로그에 찍혀 나옴
 
- <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/3.png" width="60%"></img>
+ <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/3.png" width="50%"></img>|<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/4.png" width="50%"></img>
 
- <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/4.png" width="60%"></img>
+  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/5.png" width="20%"></img>
