@@ -76,3 +76,7 @@ android study (Java)
       - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day15/Lesson_15_0405)
       - [final](https://github.com/hyejin830/Android_Daily_Study/tree/master/Final/Final_Project)
       - [Web Server](https://github.com/hyejin830/Android_Daily_Study/tree/master/Workspace/Project0403)
+
+16. day16 [2019.04.08]
+      - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/Summary.md)
+      - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day16/PassiveFireBaseExample)

@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "1013710229436",
+    "firebase_url": "https://passivefirebaseexample.firebaseio.com",
+    "project_id": "passivefirebaseexample",
+    "storage_bucket": "passivefirebaseexample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013710229436:android:9f9733d4ac2ce2aa",
+        "android_client_info": {
+          "package_name": "com.example.passivefirebaseexample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6CZKIn9AOsnkMBwpVnV5qnhTuHs8eh44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013710229436-l4g5fjlr90hbr1eoque0l1kkid09ka95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
