@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lesson_17_04009</string>
+    <string name="send">send</string>
+    <string name="send_notification_example">send notification example</string>
+    <string name="notification_select_activity">알림 창 선택하면 실행되는 액티비티</string>
+    <string name="send_notification_async_task_practice">send notification async task practice</string>
+</resources>
