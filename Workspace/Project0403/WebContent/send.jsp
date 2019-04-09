@@ -13,7 +13,7 @@
 
 String json = 
 
-"{\"to\":\"fYmF2Qdq3I0:APA91bE4DlX832IpuUyxsVRYs-xKr8IkdN1JkbNRSFA8Vdn14WYuYvl0oFPTtrNNQD0dyngwtXWsoeLJ7_eo_bTv0nq5zdXH-chgqu3KpkPjh36SEgXN8CjiUHpG_U38uhDlkQVSxFnz\",\"notification\":{\"title\":\"Portugal vs. Denmark\",\"body\":\"great match!\"}}";
+"{\"to\"토큰\",\"notification\":{\"title\":\"Portugal vs. Denmark\",\"body\":\"great match!\"}}";
 
 String msgMap = sendREST("https://fcm.googleapis.com/fcm/send", json);
 %>
@@ -33,7 +33,7 @@ StringBuffer outResult = new StringBuffer();
 	conn.setDoOutput(true);
 	conn.setRequestMethod("POST");
 	conn.setRequestProperty("Content-Type", "application/json");
-	conn.setRequestProperty("Authorization", "key=AAAA7AXWj7w:APA91bG4EFfeNYJOBh0JhsO3nRdTYSJOt0V_FtefwMRB-RYDPunXsrufUB8n5rJ-w9UwvVH958ci2GJHqPIGNqXi0QjIH2ktW1KY6xO7DDYKTbEe4zjDTosSPbsuCJsMBSEfM-E07hiy"); 
+	conn.setRequestProperty("Authorization", "key=서버키"); 
 	conn.setConnectTimeout(10000);
 	conn.setReadTimeout(10000);
       
