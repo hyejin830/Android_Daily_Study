@@ -15,8 +15,6 @@ import android.util.Log;
 import com.example.passivefirebaseexample.MainActivity;
 import com.google.firebase.messaging.RemoteMessage;
 
-import java.util.Map;
-
 public class MyFireBaseMessagingService extends com.google.firebase.messaging.FirebaseMessagingService {
 
     private static final String TAG = "MessagingService";
@@ -24,9 +22,9 @@ public class MyFireBaseMessagingService extends com.google.firebase.messaging.Fi
     // 메시지 수신
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
-        Map<String, String> data = remoteMessage.getData();
-        String title = data.get("title");
-        String message = data.get("content");
+
+        String title = remoteMessage.getNotification().getTitle();
+        String message = remoteMessage.getNotification().getBody();
 
         Log.d(TAG + "title", title);
         Log.d(TAG + "content", message);

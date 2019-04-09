@@ -88,3 +88,25 @@ curl -X POST -H "Authorization: key=[서버키]" -H "Content-Type: application/j
  <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/3.png" width="50%"></img>|<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/4.png" width="50%"></img>
 
   <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/images/5.png" width="20%"></img>
+
+
+  ### 추가 보강
+
+  https://firebase.google.com/docs/cloud-messaging/concept-options?hl=ko
+
+  ```
+{
+  "message":{
+    "token":"bk3RNwTe3H0:CI2k_HHwgIpoDKCIZvvDMExUdFQ3P1...",
+    "notification":{
+      "title":"Portugal vs. Denmark",
+      "body":"great match!"
+    },
+    "data" : {
+      "Nick" : "Mario",
+      "Room" : "PortugalVSDenmark"
+    }
+  }
+}
+  ```
+
