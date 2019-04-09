@@ -80,3 +80,9 @@ android study (Java)
 16. day16 [2019.04.08]
       - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day16/Summary.md)
       - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day16/PassiveFireBaseExample)
+
+17. day17 [2019.04.09]
+      - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day17/Summary.md)
+      - [project(receive msg)](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day16/PassiveFireBaseExample)
+      - [project(send msg, notification intent)](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day17/Lesson_17_0409)
+      - [Web Server](https://github.com/hyejin830/Android_Daily_Study/tree/master/Workspace/Project0403) : send.jsp 추가

@@ -108,10 +108,10 @@ com.fasterxml.jackson.databind.jar
 "{\"to\":\"토큰값\",\"notification\":{\"title\":\"Portugal vs. Denmark\",\"body\":\"great match!\"}}";
 ```
 
-실습 
+### 3.3 실습 
 
-- 비동기 TASk VM [코드]()
+- 비동기 TASk VM [코드](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day17/Lesson_17_04009/app/src/main/java/com/example/lesson_17_04009/practice01_notification)
 
-- PUSH 받는 VM [코드]()
+- PUSH 받는 VM [코드](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day16/PassiveFireBaseExample/app/src/main/java/com/example/passivefirebaseexample/passive_practice01_firebase)
 
 <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day17/images/3.png" width="40%"></img>
