@@ -1,10 +1,10 @@
 
 ## RecylcerView를 활용한 채팅 액티비티 생성
 
-1. MessageModel 선언
+### 1. MessageModel 선언
    - 보내는 포맷에 맞게 변수 선언 후, getter/setter/constructor/toString 을 생성
 
-2. RecyclerView Adapter 생성
+### 2. RecyclerView Adapter 생성
 
 ```
  @Override
@@ -30,7 +30,7 @@
     }
 ```
 
-3. RecyclerView에 adapter 연결
+### 3. RecyclerView에 adapter 연결
 
 - 임의로 item 추가
 
@@ -60,3 +60,13 @@ new Handler().postDelayed(new Runnable() {
                 }, 200);
 ```
 
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day18/images/1.png" width="40%"></img>|<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day18/images/2.png" width="40%"></img>
+
+-------------
+
+## token 외부 DB 항목에 추가 
+
+- 회원가입 할 때 사용자의 토큰 값 저장
+: ALTER TABLE uesrs ADD token varchar(160) not null;
+
+## server 코드와 java 코드 수정
