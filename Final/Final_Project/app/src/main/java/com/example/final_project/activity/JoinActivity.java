@@ -22,6 +22,8 @@ public class JoinActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button doJoinButton;
 
+    private String signUpToken;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +68,8 @@ public class JoinActivity extends AppCompatActivity implements View.OnClickListe
                     httpJoinAsyncTask
                             .execute(getString(R.string.join_jsp_file_name), getString(R.string.email_command) + "=" + joinEmailEditText.getText().toString()
                                     + "&" + getString(R.string.name_command) + "=" + joinIdEditText.getText().toString()
-                                    + "&" + getString(R.string.password_command) + "=" + joinPwEditText.getText().toString()).get();
+                                    + "&" + getString(R.string.password_command) + "=" + joinPwEditText.getText().toString()
+                                    + "&token=" + signUpToken).get();
 
             Toast.makeText(getApplicationContext(), receiveResultMsg, Toast.LENGTH_LONG).show();
             JoinActivity.this.finish();

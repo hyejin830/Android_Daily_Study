@@ -5,6 +5,7 @@
 <%
 	String email = request.getParameter("email");
 	String name = request.getParameter("name");
+	String token = request.getParameter("toekn");
 
 	String password = request.getParameter("password");
 
@@ -24,7 +25,7 @@
 
 	Statement stmt = conn.createStatement();
 
-	String sql = "INSERT INTO users VALUES('" + email + "','" + name + "','" + password + "')";
+	String sql = "INSERT INTO users VALUES('" + email + "','" + name + "','" + password + "','" + token + "')";
 
 	try{
 		int result = stmt.executeUpdate(sql);

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lesson_18_0410</string>
+    <string name="btn_send_msg">전송</string>
+    <string name="user_name_1">user1</string>
+    <string name="user_msg_1">user1 message1</string>
+    <string name="user_name_2">user2</string>
+    <string name="user_msg_2">user2 message1</string>
+    <string name="message_example">message example</string>
+</resources>

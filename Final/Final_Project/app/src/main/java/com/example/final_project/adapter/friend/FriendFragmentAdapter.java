@@ -45,9 +45,11 @@ public class FriendFragmentAdapter extends RecyclerView.Adapter<FriendFragmentAd
     }
 
     @Override
-    public void onBindViewHolder(@NonNull FriendFragmentViewHolder friendFragmentViewHolder, int position) {
+    public void onBindViewHolder(@NonNull FriendFragmentViewHolder friendFragmentViewHolder, final int position) {
         friendFragmentViewHolder.userEmail.setText(userModelArrayList.get(position).getUserEmail());
         friendFragmentViewHolder.userName.setText(userModelArrayList.get(position).getUserName());
+
+
     }
 
     @Override
