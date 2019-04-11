@@ -24,4 +24,4 @@
 - DB에 저장된 상대방 Token 값 가져와서 푸쉬 메세지 전송
 
 
-<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day19/images/1.png" width="40%"></img>
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day19/images/1.png" width="60%"></img>

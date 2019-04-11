@@ -96,6 +96,6 @@ android study (Java)
 
 19. day19 [2019.04.11]
       - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day19/Summary.md)
-      - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day18/Lesson_19_0411)
+      - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day19/Lesson_19_0411)
       - [final](https://github.com/hyejin830/Android_Daily_Study/tree/master/Final/Final_Project)
       - [Web Server](https://github.com/hyejin830/Android_Daily_Study/tree/master/Workspace/Project0403)
