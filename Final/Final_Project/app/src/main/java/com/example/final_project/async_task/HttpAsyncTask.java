@@ -30,7 +30,7 @@ public class HttpAsyncTask extends AsyncTask<String, Void, String> {
 
         try {
 
-            url = new URL("http://ID Address:8080/Project0403/" + strings[0] + ".jsp");
+            url = new URL("http://192.168.0.17:8080/Project0403/" + strings[0] + ".jsp");
 
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");

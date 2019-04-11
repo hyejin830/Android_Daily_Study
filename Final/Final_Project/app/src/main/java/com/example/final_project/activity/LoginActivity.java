@@ -3,6 +3,7 @@ package com.example.final_project.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,6 +12,8 @@ import android.widget.Toast;
 import com.example.final_project.MainActivity;
 import com.example.final_project.R;
 import com.example.final_project.async_task.HttpAsyncTask;
+import com.example.final_project.pattern.MyEmailSingleton;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.concurrent.ExecutionException;
 
@@ -18,6 +21,8 @@ import static com.example.final_project.R.id.btn_join;
 import static com.example.final_project.R.id.btn_login;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private static final String TAG = "LoginActivity";
 
     private HttpAsyncTask httpLoginAsyncTask;
 
@@ -31,10 +36,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
+
         initView();
     }
 
-    void initView() {
+
+
+    private void initView() {
         InputIdEditText = findViewById(R.id.et_login_id);
         InputPwEditText = findViewById(R.id.et_login_pw);
         doLoginButton = findViewById(btn_login);
@@ -52,13 +61,20 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 String receiveResultMsg;
 
                 try {
+
+                    String getInputIdEditText =InputIdEditText.getText().toString();
+                    String getInputPwEditText = InputPwEditText.getText().toString();
+
                     receiveResultMsg = httpLoginAsyncTask.
                             execute(getString(R.string.login_jsp_file_name),
-                                    getString(R.string.email_command) + "=" + InputIdEditText.getText().toString()
+                                    getString(R.string.email_command) + "=" + getInputIdEditText
                                             + "&" + getString(R.string.password_command) + "="
-                                            + InputPwEditText.getText().toString()).get();
+                                            + getInputPwEditText).get();
 
                     if (receiveResultMsg.equals(getString(R.string.login_success_msg))) {
+
+                        MyEmailSingleton.getInstance().setMyEmail(getInputIdEditText);
+
                         Intent doLoginIntent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(doLoginIntent);
                         finish();

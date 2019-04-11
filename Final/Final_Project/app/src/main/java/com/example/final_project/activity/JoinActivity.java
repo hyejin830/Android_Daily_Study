@@ -2,6 +2,7 @@ package com.example.final_project.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -9,10 +10,13 @@ import android.widget.Toast;
 
 import com.example.final_project.R;
 import com.example.final_project.async_task.HttpAsyncTask;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.concurrent.ExecutionException;
 
 public class JoinActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private static final String TAG = "JoinActivity";
 
     private HttpAsyncTask httpJoinAsyncTask;
 
@@ -29,8 +33,21 @@ public class JoinActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
 
+        doTestTokenValue();
         initView();
+    }
 
+    private void doTestTokenValue() {
+
+        signUpToken = null;
+
+        signUpToken = FirebaseInstanceId.getInstance().getToken();
+
+        if (signUpToken != null) {
+            Log.d(TAG + "토큰 생성", "token =" + signUpToken);
+        } else {
+            Log.d(TAG, "토큰 미생성");
+        }
     }
 
     void initView() {

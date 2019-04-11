@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
@@ -19,6 +20,8 @@ import com.example.final_project.fragment.SettingTabFragment;
 import com.example.final_project.fragment.TalkTabFragment;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+
+    private static final String TAG = "MainActivity";
 
     private BottomNavigationView bottomNavigationView;
     private LinearLayout ViewFragementLinearLayout;
@@ -41,7 +44,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         dbHelper = new DBHelper(getApplicationContext());
 
-        if (checkTable(sqlDB, getString(R.string.friend_table_name))) {
+        Log.e(TAG,"리턴 값 : "+checkTable(sqlDB, "friend_list"));
+        Log.e(TAG,"리턴 값 : "+checkTable(sqlDB, "messages"));
+
+        if (checkTable(sqlDB, getString(R.string.friend_table_name)) ||
+                checkTable(sqlDB, "messages")) {
             sqlDB = dbHelper.getWritableDatabase();
             dbHelper.onUpgrade(sqlDB, 1, 2);
             sqlDB.close();

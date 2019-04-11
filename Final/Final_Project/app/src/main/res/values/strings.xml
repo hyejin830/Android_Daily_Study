@@ -45,6 +45,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="friend_table_name">friend_list</string>
-    <string name="db_helper_name">UserInfo</string>
+    <string name="db_helper_name">/data/data/com.example.final_project/databases/androidDB</string>
 
+
+    <string name="btn_send_msg">전송</string>
+    <string name="user_name_1">user1</string>
+    <string name="user_msg_1">user1 message1</string>
+    <string name="user_name_2">user2</string>
+    <string name="user_msg_2">user2 message1</string>
 </resources>

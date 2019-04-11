@@ -5,8 +5,7 @@
 <%
 	String email = request.getParameter("email");
 	String name = request.getParameter("name");
-	String token = request.getParameter("toekn");
-
+	String token = request.getParameter("token");
 	String password = request.getParameter("password");
 
 	String driverName = "com.mysql.jdbc.Driver";
