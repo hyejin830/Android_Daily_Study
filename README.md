@@ -102,4 +102,4 @@ android study (Java)
 
 20. day20 [2019.04.12]
       - [summary](https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/Summary.md)
-      - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day19/Lesson_20_0412)
+      - [project](https://github.com/hyejin830/Android_Daily_Study/tree/master/Day20/Lesson_20_0412)
