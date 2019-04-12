@@ -34,8 +34,6 @@ public class FireBaseMessagingService extends com.google.firebase.messaging.Fire
         sendNotification(title, message);
     }
 
-
-    // 내일 설명
     private void sendNotification(String title, String message) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

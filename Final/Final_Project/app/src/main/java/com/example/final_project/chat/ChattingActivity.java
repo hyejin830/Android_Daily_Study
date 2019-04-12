@@ -1,5 +1,7 @@
 package com.example.final_project.chat;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -48,7 +50,7 @@ public class ChattingActivity extends AppCompatActivity implements View.OnClickL
         myEmail = MyEmailSingleton.getInstance().getMyEmail();
 
         Intent getToEmailFromFriendFragmentIntent = getIntent();
-        toEmail = getToEmailFromFriendFragmentIntent.getExtras().getString("toemail");
+        toEmail = getToEmailFromFriendFragmentIntent.getExtras().getString(getString(R.string.select_to_email));
         Log.d(TAG, "to email value : " + toEmail);
 
         // ToDo : 내부 DB 생성 후
@@ -143,7 +145,7 @@ public class ChattingActivity extends AppCompatActivity implements View.OnClickL
 
         try {
             result = httpAsyncTask.execute
-                    ("send", "fromemail=" + fromEmail + "&toemail=" + toEmail + "&message=" + message).get();
+                    (getString(R.string.send_jsp_file), "fromemail=" + fromEmail + "&toemail=" + toEmail + "&message=" + message).get();
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
@@ -151,4 +153,17 @@ public class ChattingActivity extends AppCompatActivity implements View.OnClickL
         }
 
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+    }
+
+    private BroadcastReceiver chattingBroadCastReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+        }
+    };
 }

@@ -50,7 +50,7 @@ public class JoinActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    void initView() {
+    private void initView() {
         joinEmailEditText = findViewById(R.id.et_join_email);
         joinIdEditText = findViewById(R.id.et_join_id);
         joinPwEditText = findViewById(R.id.et_join_pw);

@@ -11,7 +11,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import com.example.final_project.Model.UserModel;
 import com.example.final_project.R;
@@ -58,7 +57,7 @@ public class FriendTabFragment extends Fragment {
         sqLiteDatabase.close();
     }
 
-    void initView(View view, Context context) {
+    private void initView(View view, Context context) {
 
         userModelArrayList = new ArrayList<>();
 

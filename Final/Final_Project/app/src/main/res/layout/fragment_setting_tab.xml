@@ -10,6 +10,6 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:text="@string/setting_fragment_subject"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
 </FrameLayout>

@@ -3,7 +3,6 @@ package com.example.final_project.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +12,6 @@ import com.example.final_project.MainActivity;
 import com.example.final_project.R;
 import com.example.final_project.async_task.HttpAsyncTask;
 import com.example.final_project.pattern.MyEmailSingleton;
-import com.google.firebase.iid.FirebaseInstanceId;
 
 import java.util.concurrent.ExecutionException;
 
@@ -36,11 +34,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
-
         initView();
     }
-
 
 
     private void initView() {
@@ -62,7 +57,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                 try {
 
-                    String getInputIdEditText =InputIdEditText.getText().toString();
+                    String getInputIdEditText = InputIdEditText.getText().toString();
                     String getInputPwEditText = InputPwEditText.getText().toString();
 
                     receiveResultMsg = httpLoginAsyncTask.

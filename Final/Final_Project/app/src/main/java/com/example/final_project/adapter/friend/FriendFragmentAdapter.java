@@ -27,8 +27,6 @@ public class FriendFragmentAdapter extends RecyclerView.Adapter<FriendFragmentAd
         this.context = context;
     }
 
-
-
     public class FriendFragmentViewHolder extends RecyclerView.ViewHolder {
 
         protected TextView userEmail;
@@ -62,12 +60,12 @@ public class FriendFragmentAdapter extends RecyclerView.Adapter<FriendFragmentAd
         friendFragmentViewHolder.userName.setText(userModelArrayList.get(position).getUserName());
         friendFragmentViewHolder.getAdapterPosition();
 
-        friendFragmentViewHolder.itemView.setOnClickListener(new View.OnClickListener(){
+        friendFragmentViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 Intent startChattingActivityIntent = new Intent(context, ChattingActivity.class);
-                startChattingActivityIntent.putExtra("toemail",toEmailArrayList.get(position));
+                startChattingActivityIntent.putExtra(context.getString(R.string.select_to_email), toEmailArrayList.get(position));
                 context.startActivity(startChattingActivityIntent);
             }
         });

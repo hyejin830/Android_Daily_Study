@@ -43,9 +43,10 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         setContentView(R.layout.activity_main);
 
         dbHelper = new DBHelper(getApplicationContext());
+        //dbHelper.onOpen(sqlDB);
 
-        Log.e(TAG,"리턴 값 : "+checkTable(sqlDB, "friend_list"));
-        Log.e(TAG,"리턴 값 : "+checkTable(sqlDB, "messages"));
+        Log.e(TAG, "리턴 값 : " + checkTable(sqlDB, "friend_list"));
+        Log.e(TAG, "리턴 값 : " + checkTable(sqlDB, "messages"));
 
         if (checkTable(sqlDB, getString(R.string.friend_table_name)) ||
                 checkTable(sqlDB, "messages")) {
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         initView();
     }
 
-    void initView() {
+    private void initView() {
 
         ViewFragementLinearLayout = findViewById(R.id.main_content_linear_layout);
 

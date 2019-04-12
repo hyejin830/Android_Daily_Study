@@ -10,14 +10,15 @@ import com.example.final_project.R;
 public class DBHelper extends SQLiteOpenHelper {
 
     private static final String TAG = "DBHelper";
+
     public DBHelper(Context context) {
         super(context, context.getString(R.string.db_helper_name), null, 1);
-        Log.d(TAG,"database");
+        Log.d(TAG, "database");
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        Log.d(TAG,"Table 생성");
+        Log.d(TAG, "Table 생성");
         db.execSQL("CREATE TABLE friend_list (email varchar(50) not null,name	varchar(10) not null, primary key(email));");
         db.execSQL("CREATE TABLE messages (fromUser varchar(50) not null,toUser varchar(50) not null,message varchar(100) not null);");
     }
