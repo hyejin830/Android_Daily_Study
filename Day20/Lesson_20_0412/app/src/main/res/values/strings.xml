@@ -3,4 +3,11 @@
     <string name="power_connection_fail">전원 연결 : 안됨</string>
     <string name="power_connection_adapter">전원 연결 : 어댑터 연결됨</string>
     <string name="power_connection_usb">전원 연결 : USB 연결됨</string>
+    <string name="camera_example_data">데이터</string>
+    <string name="camera_example_address">주소</string>
+    <string name="camera_example_scan">스캔</string>
+    <string name="do_start_camera_example">카메라 예제 이동</string>
+    <string name="qr_code_scanning">Scanning....</string>
+    <string name="scan_cancel">취소</string>
+    <string name="scan_success">스캔 완료</string>
 </resources>

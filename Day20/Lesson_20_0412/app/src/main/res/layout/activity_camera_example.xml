@@ -4,28 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/iv_battery_state"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/battery_0" />
+    tools:context=".example02_camera.CameraExampleActivity">
 
     <TextView
-        android:id="@+id/tv_battery_text"
+        android:id="@+id/tv_view_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/color_ffdab9"
-        android:textColor="@color/color_000000" />
+        android:text="@string/camera_example_data"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_view_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/camera_example_address"
+        android:textSize="30sp" />
 
     <Button
-        android:id="@+id/do_start_camera_example"
+        android:id="@+id/btn_do_scan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:text="@string/do_start_camera_example" />
+        android:text="@string/camera_example_scan"
+        android:textSize="30sp" />
 
 </LinearLayout>

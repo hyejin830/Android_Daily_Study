@@ -58,14 +58,43 @@ Android Console: you can find your <auth_token> in
 - power ac off
 
 
-<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/images/2.png" width="60%">
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/images/2.png" width="40%">
 
 ```
 power capacity 50
 ```
 
-<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/images/3.png" width="60%">
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/images/3.png" width="40%">
 
 
+## 카메라
 
+외부 라이브러리를 이용한 QR code 예제
+
+```
+implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+```
+
+- 가상머신은 실제 카메라 기능을 하지 못함
+
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/images/4.png" width="40%"> | <img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/images/5.png" width="40%">
+
+
+## APK 파일 배포하여 테스트
+
+- APK Release
+
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/images/9.png" width="40%"> 
+
+- apk로 카메라 기능 확인
+  
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/images/6.png" width="40%"> 
+
+- QR code 인터넷에서 생성
+
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/images/8.png" width="50%"> 
+
+- 결과 
+
+<img src="https://github.com/hyejin830/Android_Daily_Study/blob/master/Day20/images/7.png" width="40%"> 
 
