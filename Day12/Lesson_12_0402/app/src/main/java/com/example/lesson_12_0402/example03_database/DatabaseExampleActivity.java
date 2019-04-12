@@ -18,7 +18,7 @@ import org.w3c.dom.Text;
 
 public class DatabaseExampleActivity extends AppCompatActivity implements View.OnClickListener {
 
-    DBHelper Helper;
+    private DBHelper Helper;
     private EditText InputNameEditText;
     private EditText InputAgeEditText;
     private TextView InPutNameResultTextView;
@@ -39,7 +39,7 @@ public class DatabaseExampleActivity extends AppCompatActivity implements View.O
         initView();
     }
 
-    void initView() {
+    private void initView() {
 
         setTitle(getString(R.string.database_example_subject));
 
@@ -77,7 +77,7 @@ public class DatabaseExampleActivity extends AppCompatActivity implements View.O
                         + InputNameEditText.getText().toString() + "',"
                         + InputAgeEditText.getText().toString() + ");");
                 sqlDB.close();
-                Toast.makeText(getApplicationContext(), "입력 완료", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getString(R.string.input_success), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_db_select:
                 sqlDB = Helper.getWritableDatabase();

@@ -15,10 +15,18 @@
     <string name="take_photo">사진 찍기</string>
     <string name="search_google">구글 검색하기</string>
 
-    <!-- menu_bottm.xml -->
+    <!-- menu_bottomm.xml -->
     <string name="menu_friend">친구 목록</string>
     <string name="menu_talk">대화</string>
     <string name="menu_photo">사진</string>
     <string name="menu_setting">설정</string>
+    <string name="make_call_uri">tel:010-0000-0000</string>
+    <string name="open_home_page_uri">http://www.naver.com</string>
+    <string name="open_google_map_uri">https://www.google.co.kr/maps/place/37%C2%B034\'15.5%22N+126%C2%B059\'32.5%22E/@37.5709641,126.9918048,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d37.570963!4d126.9923521</string>
+    <string name="sms_to">smsto:</string>
+    <string name="send_uri">010-1234-5678</string>
+    <string name="sms_body">sms_body</string>
+    <string name="sms_body_value">안녕하세요</string>
+    <string name="search_google_value">안드로이드</string>
 
 </resources>

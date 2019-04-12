@@ -1,15 +1,12 @@
 package com.example.lesson_14_0404.practice;
 
-import android.content.Intent;
-import android.graphics.Paint;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.lesson_14_0404.MainActivity;
 import com.example.lesson_14_0404.R;
 
 import java.util.concurrent.ExecutionException;
@@ -33,7 +30,7 @@ public class JoinActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    void initView() {
+    private void initView() {
         joinEmailEditText = findViewById(R.id.et_join_email);
         joinIdEditText = findViewById(R.id.et_join_id);
         joinPwEditText = findViewById(R.id.et_join_pw);

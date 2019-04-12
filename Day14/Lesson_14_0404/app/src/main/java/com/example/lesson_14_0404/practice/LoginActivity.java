@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         initView();
     }
 
-    void initView() {
+    private void initView() {
         InputIdEditText = findViewById(R.id.et_login_id);
         InputPwEditText = findViewById(R.id.et_login_pw);
         doLoginButton = findViewById(btn_login);
@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                             + InputPwEditText.getText().toString()).get();
 
                     if (receiveResultMsg.equals(getString(R.string.login_success_msg))) {
-                        Intent doLoginIntent = new Intent(LoginActivity.this, ContetnActivity.class);
+                        Intent doLoginIntent = new Intent(this, ContentActivity.class);
                         startActivity(doLoginIntent);
                         finish();
                     }
@@ -73,7 +73,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
 
             case btn_join:
-                Intent doStartJoinIntent = new Intent(LoginActivity.this, JoinActivity.class);
+                Intent doStartJoinIntent = new Intent(this, JoinActivity.class);
                 startActivity(doStartJoinIntent);
                 break;
         }

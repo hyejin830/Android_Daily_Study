@@ -17,7 +17,7 @@ public class HttpAsyncTask extends AsyncTask<String, Void, String> {
      * strings[1] is execute command from activity
      * @return received msg from JSP
      */
-    private static String TASK_RESULT_MESSEAGE = "Task result";
+    private static String TASK_RESULT_MESSAGE = "Task result";
     private static String receiveMsg;
 
     @Override
@@ -62,7 +62,7 @@ public class HttpAsyncTask extends AsyncTask<String, Void, String> {
                 receiveMsg = buffer.toString();
 
             } else {
-                Log.i(TASK_RESULT_MESSEAGE, connection.getResponseCode() + "Error");
+                Log.i(TASK_RESULT_MESSAGE, connection.getResponseCode() + "Error");
             }
 
 

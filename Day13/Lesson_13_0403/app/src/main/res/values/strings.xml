@@ -13,4 +13,5 @@
     <!-- activity_main.xml -->
     <string name="btn_async_task_simple">Async Task Simple</string>
     <string name="btn_async_task_example">Async Task Example</string>
+    <string name="async_task_success">비동기 작업 완료</string>
 </resources>

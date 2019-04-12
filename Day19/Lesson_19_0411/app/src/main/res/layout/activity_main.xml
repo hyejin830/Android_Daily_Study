@@ -10,7 +10,7 @@
         android:id="@+id/btn_do_start_singleton_test_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="테스트"
+        android:text="@string/singleton_test"
         android:textSize="30sp" />
 
 </LinearLayout>

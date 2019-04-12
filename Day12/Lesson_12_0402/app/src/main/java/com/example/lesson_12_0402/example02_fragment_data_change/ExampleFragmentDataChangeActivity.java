@@ -1,22 +1,20 @@
 package com.example.lesson_12_0402.example02_fragment_data_change;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.lesson_12_0402.R;
-import com.example.lesson_12_0402.example01_fragment_life_cycle.ExampleFirstFragment;
-import com.example.lesson_12_0402.example01_fragment_life_cycle.ExampleSecondFragment;
 
 public class ExampleFragmentDataChangeActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static String ActivityName ="";
+    private static String ActivityName = "ExampleFragmentDataChangeActivity";
 
     private Fragment ExampleDataChangeFragment;
     private FragmentManager fragmentManager;
@@ -40,7 +38,7 @@ public class ExampleFragmentDataChangeActivity extends AppCompatActivity impleme
         Toast.makeText(getApplicationContext(), ActivityName + getString(R.string.on_create), Toast.LENGTH_SHORT).show();
     }
 
-    void initView() {
+    private void initView() {
 
         ActivityName = getString(R.string.data_change_activity);
 
@@ -59,7 +57,7 @@ public class ExampleFragmentDataChangeActivity extends AppCompatActivity impleme
         currentFragmentIndex = 0;
     }
 
-    void initFragmentView() {
+    private void initFragmentView() {
         exampleDataChangeFirstFragment = (ExampleDataChangeFirstFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.example_data_change_linear_layout);
         FirstFragmentTextView = findViewById(R.id.first_fragment_text);

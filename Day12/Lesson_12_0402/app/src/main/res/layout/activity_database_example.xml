@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/database_name_edit_text"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/et_input_name"
@@ -32,13 +32,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/database_age_edit_text"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/et_input_age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"></EditText>
+            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
@@ -89,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#00FF00"
+            android:background="@color/color_00FF00"
             android:padding="20dp" />
 
         <TextView
@@ -97,7 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#00FF00"
+            android:background="@color/color_00FF00"
             android:padding="20dp" />
     </LinearLayout>
 

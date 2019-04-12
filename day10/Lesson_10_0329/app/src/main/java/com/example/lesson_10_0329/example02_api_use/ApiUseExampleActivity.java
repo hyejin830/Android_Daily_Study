@@ -1,9 +1,9 @@
 package com.example.lesson_10_0329.example02_api_use;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.lesson_10_0329.R;
@@ -20,14 +20,14 @@ public class ApiUseExampleActivity extends AppCompatActivity implements BottomNa
         initView();
     }
 
-    void initView() {
+    private void initView() {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        // 이벤트
+        // 이벤트 작성 부분
         return false;
     }
 }

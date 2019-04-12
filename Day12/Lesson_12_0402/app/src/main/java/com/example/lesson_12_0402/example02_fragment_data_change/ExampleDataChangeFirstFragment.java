@@ -16,7 +16,7 @@ import com.example.lesson_12_0402.R;
 
 public class ExampleDataChangeFirstFragment extends Fragment implements View.OnClickListener {
 
-    private static String FragmentName="";
+    private static String FragmentName = "ExampleDataChangeFirstFragment";
     private Context context;
 
     private ExampleFragmentDataChangeActivity exampleFragmentDataChangeActivity;
@@ -60,7 +60,7 @@ public class ExampleDataChangeFirstFragment extends Fragment implements View.OnC
         initView();
     }
 
-    void initView() {
+    private void initView() {
         doChangeFirstFragment = getActivity().findViewById(R.id.btn_do_change_activity_text);
         FirstFragmentTextView = getActivity().findViewById(R.id.tv_do_access_fragment);
 
@@ -76,6 +76,7 @@ public class ExampleDataChangeFirstFragment extends Fragment implements View.OnC
         }
     }
 
+
     @Override
     public void onStart() {
         super.onStart();
@@ -87,6 +88,8 @@ public class ExampleDataChangeFirstFragment extends Fragment implements View.OnC
         super.onResume();
         Toast.makeText(context, FragmentName + context.getString(R.string.on_resume), Toast.LENGTH_SHORT).show();
     }
+
+
 
     @Override
     public void onDestroyView() {

@@ -16,7 +16,7 @@ import com.example.lesson_12_0402.R;
 
 public class ExampleFragmentLifeCycleActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static String ActivityName="";
+    private static String ActivityName = "ExampleFragmentLifeCycleActivity";
 
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
@@ -33,7 +33,7 @@ public class ExampleFragmentLifeCycleActivity extends AppCompatActivity implemen
         Toast.makeText(getApplicationContext(), ActivityName + getString(R.string.on_create), Toast.LENGTH_SHORT).show();
     }
 
-    void initView() {
+    private void initView() {
 
         ActivityName = getString(R.string.fragment_life_cycle__activity);
 

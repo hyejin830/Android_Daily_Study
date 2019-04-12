@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".example01_async_task.JoinActivity"></activity>
-        <activity android:name=".example01_async_task.AsyncTaskSImpleActivity" />
+        <activity android:name=".example01_async_task.AsyncTaskSimpleActivity" />
         <activity android:name=".example01_async_task.AsyncTaskExampleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

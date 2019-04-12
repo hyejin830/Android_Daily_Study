@@ -1,15 +1,14 @@
 package com.example.lesson_11_0401.practice01_fragment;
 
 import android.graphics.Point;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.LinearLayout;
 
 import com.example.lesson_11_0401.R;
 import com.example.lesson_11_0401.example01_fragment.ExampleFirstFragment;
@@ -35,7 +34,7 @@ public class FragmentPracticeActivity extends AppCompatActivity implements View.
         initView();
     }
 
-    void initView() {
+    private void initView() {
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
@@ -74,7 +73,7 @@ public class FragmentPracticeActivity extends AppCompatActivity implements View.
                     currentFragmentIndex--;
                 }
 
-                fragmentTransaction.replace(R.id.practice_linear_layout, fragment);
+                fragmentTransaction.replace(R.id.linear_layout_do_switch_fragment, fragment);
                 fragmentTransaction.commit();
 
                 break;

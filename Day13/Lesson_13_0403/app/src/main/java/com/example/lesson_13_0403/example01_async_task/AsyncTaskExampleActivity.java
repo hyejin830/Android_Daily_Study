@@ -1,8 +1,8 @@
 package com.example.lesson_13_0403.example01_async_task;
 
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +22,8 @@ import java.util.concurrent.ExecutionException;
 
 public class AsyncTaskExampleActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final String TAG = "AsyncTaskExample";
+
     private HttpLoginAsyncTask httpLoginAsyncTask;
 
     private EditText InputIdEditText;
@@ -37,7 +39,7 @@ public class AsyncTaskExampleActivity extends AppCompatActivity implements View.
         initView();
     }
 
-    void initView() {
+    private void initView() {
         InputIdEditText = findViewById(R.id.etID);
         InputPwEditText = findViewById(R.id.etPW);
         LoginButton = findViewById(R.id.btn_login);
@@ -75,7 +77,7 @@ public class AsyncTaskExampleActivity extends AppCompatActivity implements View.
             URL url = null;
 
             try {
-                url = new URL("http://192.168.0.205:8080/Project0403/test.jsp");
+                url = new URL("http://IP Address:8080/Project0403/test.jsp");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("POST");
 
@@ -101,7 +103,7 @@ public class AsyncTaskExampleActivity extends AppCompatActivity implements View.
                     receiveMsg = buffer.toString();
 
                 } else {
-                    Log.i("hyejin 통신 결과", connection.getResponseCode() + "에러");
+                    Log.i(TAG, "통신 결과 : " + connection.getResponseCode() + "에러");
                 }
 
 
@@ -111,10 +113,8 @@ public class AsyncTaskExampleActivity extends AppCompatActivity implements View.
                 e.printStackTrace();
             }
 
-
             return receiveMsg;
         }
     }
-
 
 }

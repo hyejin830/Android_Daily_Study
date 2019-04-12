@@ -1,10 +1,7 @@
 package com.example.lesson_14_0404.practice;
 
-import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
-
-import com.example.lesson_14_0404.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,8 +10,6 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-
-import static java.net.HttpURLConnection.*;
 
 public class HttpAsyncTask extends AsyncTask<String, Void, String> {
     /**
@@ -35,7 +30,7 @@ public class HttpAsyncTask extends AsyncTask<String, Void, String> {
 
         try {
 
-            url = new URL("http://172.30.1.24:8080/Project0403/" + strings[0] + ".jsp");
+            url = new URL("http://IP Address:8080/Project0403/" + strings[0] + ".jsp");
 
             connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");

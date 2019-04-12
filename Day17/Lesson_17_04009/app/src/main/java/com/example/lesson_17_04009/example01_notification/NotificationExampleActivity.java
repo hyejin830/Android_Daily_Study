@@ -29,7 +29,7 @@ public class NotificationExampleActivity extends AppCompatActivity implements Vi
         initView();
     }
 
-    void initView() {
+    private void initView() {
         doSendNotificationButton = findViewById(R.id.btn_do_send_notification);
         doSendNotificationButton.setOnClickListener(this);
     }
@@ -52,13 +52,6 @@ public class NotificationExampleActivity extends AppCompatActivity implements Vi
 
         // Notification sound
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        /*Uri soundUri = Uri.parse(
-                "android.resource://" +
-                        getApplicationContext().getPackageName() +
-                        "/raw/" +
-                        R.raw.Gentle_wake_alarm_clock);*/
-
-
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         String name = "NOTIFICATION";
         String channel_id = "fcm_default_channel";

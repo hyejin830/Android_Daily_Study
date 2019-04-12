@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    void initView() {
+    private void initView() {
         doStartFragmentExampleButton = findViewById(R.id.btn_do_start_fragment_example);
         doStartFragmentPracticeButton = findViewById(R.id.btn_do_start_fragment_practice);
 
@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_do_start_fragment_example:
-                Intent StartFragmentExampleIntent = new Intent(MainActivity.this, FragmentExampleActivity.class);
+                Intent StartFragmentExampleIntent = new Intent(this, FragmentExampleActivity.class);
                 startActivity(StartFragmentExampleIntent);
                 break;
             case R.id.btn_do_start_fragment_practice:
-                Intent StartFragmentPracticeIntent = new Intent(MainActivity.this, FragmentPracticeActivity.class);
+                Intent StartFragmentPracticeIntent = new Intent(this, FragmentPracticeActivity.class);
                 startActivity(StartFragmentPracticeIntent);
                 break;
         }

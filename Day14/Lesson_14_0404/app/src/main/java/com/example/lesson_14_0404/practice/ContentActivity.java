@@ -1,11 +1,11 @@
 package com.example.lesson_14_0404.practice;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.example.lesson_14_0404.R;
 
-public class ContetnActivity extends AppCompatActivity {
+public class ContentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

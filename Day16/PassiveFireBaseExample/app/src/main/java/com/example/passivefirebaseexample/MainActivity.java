@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
     }
 
-    void initView() {
+    private void initView() {
         startServiceExampleButton = findViewById(R.id.btn_do_start_service_example);
         startFireBasePracticeButton = findViewById(R.id.btn_do_start_fire_base_practice);
 
@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_do_start_service_example:
-                Intent doStartSeriveExampleIntent = new Intent(MainActivity.this, ServiceExampleActivity.class);
-                startActivity(doStartSeriveExampleIntent);
+                Intent doStartServiceExampleIntent = new Intent(this, ServiceExampleActivity.class);
+                startActivity(doStartServiceExampleIntent);
                 break;
             case R.id.btn_do_start_fire_base_practice:
-                Intent doStartFireBasePracticeIntent = new Intent(MainActivity.this, FireBasePracticeActivity.class);
+                Intent doStartFireBasePracticeIntent = new Intent(this, FireBasePracticeActivity.class);
                 startActivity(doStartFireBasePracticeIntent);
                 break;
         }

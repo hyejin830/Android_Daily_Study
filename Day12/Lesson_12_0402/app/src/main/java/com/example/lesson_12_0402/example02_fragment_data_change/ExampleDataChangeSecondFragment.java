@@ -17,7 +17,7 @@ import com.example.lesson_12_0402.R;
  */
 public class ExampleDataChangeSecondFragment extends Fragment {
 
-    private static String FragmentName = "";
+    private static String FragmentName = "ExampleDataChangeSecondFragment";
     private Context context;
 
     @Override
@@ -25,7 +25,7 @@ public class ExampleDataChangeSecondFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         Toast.makeText(context, FragmentName + context.getString(R.string.on_create_view), Toast.LENGTH_SHORT).show();
-        
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_example_data_change_second, container, false);
     }
@@ -37,7 +37,7 @@ public class ExampleDataChangeSecondFragment extends Fragment {
         this.context = context;
         FragmentName = context.getString(R.string.second_fragment);
 
-        Toast.makeText(context, FragmentName + context.getString(R.string.on_attach) , Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, FragmentName + context.getString(R.string.on_attach), Toast.LENGTH_SHORT).show();
     }
 
     @Override

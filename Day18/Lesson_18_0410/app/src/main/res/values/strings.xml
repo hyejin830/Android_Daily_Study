@@ -6,4 +6,6 @@
     <string name="user_name_2">user2</string>
     <string name="user_msg_2">user2 message1</string>
     <string name="message_example">message example</string>
+    <string name="item_message">message</string>
+    <string name="item_name">이름</string>
 </resources>

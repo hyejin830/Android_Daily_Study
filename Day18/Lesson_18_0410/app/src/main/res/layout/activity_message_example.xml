@@ -23,6 +23,7 @@
         android:id="@+id/et_input_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/btn_send_message" />
@@ -31,6 +32,7 @@
         android:id="@+id/btn_send_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:text="@string/btn_send_msg" />

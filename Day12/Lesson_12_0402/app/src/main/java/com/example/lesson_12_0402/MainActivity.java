@@ -1,8 +1,8 @@
 package com.example.lesson_12_0402;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    void initView() {
+    private void initView() {
         doStartFragmentExampleButton = findViewById(R.id.btn_do_start_fragment_life_cycle_example);
         doStartFragmentDataChangeButton = findViewById(R.id.btn_do_start_fragment_data_change);
         doStartDatabaseExampleButton = findViewById(R.id.btn_do_start_database_example);
@@ -43,19 +43,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_do_start_fragment_life_cycle_example:
-                Intent startFragmentLifeCycleExampleIntent = new Intent(MainActivity.this, ExampleFragmentLifeCycleActivity.class);
+                Intent startFragmentLifeCycleExampleIntent = new Intent(this, ExampleFragmentLifeCycleActivity.class);
                 startActivity(startFragmentLifeCycleExampleIntent);
                 break;
             case R.id.btn_do_start_fragment_data_change:
-                Intent startFragmentDataChangeIntent = new Intent(MainActivity.this, ExampleFragmentDataChangeActivity.class);
+                Intent startFragmentDataChangeIntent = new Intent(this, ExampleFragmentDataChangeActivity.class);
                 startActivity(startFragmentDataChangeIntent);
                 break;
             case R.id.btn_do_start_database_example:
-                Intent startDatabaseExampleIntent = new Intent(MainActivity.this, DatabaseExampleActivity.class);
+                Intent startDatabaseExampleIntent = new Intent(this, DatabaseExampleActivity.class);
                 startActivity(startDatabaseExampleIntent);
                 break;
             case R.id.btn_do_start_external_database_login:
-                Intent startExternalDatabaseLoginIntent = new Intent(MainActivity.this, ExternalDatabaseLoginActivity.class);
+                Intent startExternalDatabaseLoginIntent = new Intent(this, ExternalDatabaseLoginActivity.class);
                 startActivity(startExternalDatabaseLoginIntent);
                 break;
         }

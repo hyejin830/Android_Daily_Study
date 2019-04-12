@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
     }
 
-    void initView() {
+    private void initView() {
         doStartNotificationExampleButton = findViewById(R.id.do_start_notification_example);
         doStartNotificationAsyncTaskButton = findViewById(R.id.do_start_notification_async_task);
 
@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.do_start_notification_example:
-                Intent startNotificationExampleIntent = new Intent(MainActivity.this, NotificationExampleActivity.class);
+                Intent startNotificationExampleIntent = new Intent(this, NotificationExampleActivity.class);
                 startActivity(startNotificationExampleIntent);
                 break;
             case R.id.do_start_notification_async_task:
-                Intent startNotificationAsyncTaskIntent = new Intent(MainActivity.this, NotificationAsyncTaskActivity.class);
+                Intent startNotificationAsyncTaskIntent = new Intent(this, NotificationAsyncTaskActivity.class);
                 startActivity(startNotificationAsyncTaskIntent);
                 break;
         }

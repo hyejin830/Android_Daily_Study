@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/fragment_example_subject_1"
-        android:textSize="30dp" />
-
+        android:textSize="30sp" />
 
 </LinearLayout>

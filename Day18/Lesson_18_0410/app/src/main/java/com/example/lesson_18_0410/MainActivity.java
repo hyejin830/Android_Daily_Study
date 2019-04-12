@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
     }
 
-    void initView() {
+    private void initView() {
         doStartMessageExampleButton = findViewById(R.id.btn_do_start_message_example);
         doStartMessageExampleButton.setOnClickListener(this);
     }
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_do_start_message_example:
-                Intent startMessageExampleIntent = new Intent(MainActivity.this, MessageExampleActivity.class);
+                Intent startMessageExampleIntent = new Intent(this, MessageExampleActivity.class);
                 startActivity(startMessageExampleIntent);
                 break;
         }

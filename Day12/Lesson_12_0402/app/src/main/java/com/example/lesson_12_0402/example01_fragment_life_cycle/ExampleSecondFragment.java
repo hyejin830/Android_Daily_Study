@@ -14,7 +14,7 @@ import com.example.lesson_12_0402.R;
 
 public class ExampleSecondFragment extends Fragment {
 
-    private static String FragmentName = "";
+    private static String FragmentName = "ExampleSecondFragment";
     private Context context;
 
     @Override

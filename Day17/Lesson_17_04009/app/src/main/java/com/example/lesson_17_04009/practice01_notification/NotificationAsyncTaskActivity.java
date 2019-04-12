@@ -22,7 +22,7 @@ public class NotificationAsyncTaskActivity extends AppCompatActivity implements 
         initView();
     }
 
-    void initView() {
+    private void initView() {
         doSendNotificationAsyncTaskButton = findViewById(R.id.btn_do_send_notification_async_task);
         doSendNotificationAsyncTaskButton.setOnClickListener(this);
     }
@@ -35,7 +35,7 @@ public class NotificationAsyncTaskActivity extends AppCompatActivity implements 
                 String result = null;
 
                 try {
-                    result = httpAsyncTask.execute("send", "").get();
+                    result = httpAsyncTask.execute(getString(R.string.send_jsp_file_name), "").get();
                 } catch (ExecutionException e) {
                     e.printStackTrace();
                 } catch (InterruptedException e) {

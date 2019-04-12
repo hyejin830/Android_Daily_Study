@@ -1,7 +1,7 @@
 package com.example.lesson_15_0405.adapter;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -28,7 +28,7 @@ public class AdapterExampleActivity extends AppCompatActivity implements View.On
         initView();
     }
 
-    void initView() {
+    private void initView() {
 
         userModelArrayList = new ArrayList<>();
         exampleAdapter = new AdapterExample(userModelArrayList);

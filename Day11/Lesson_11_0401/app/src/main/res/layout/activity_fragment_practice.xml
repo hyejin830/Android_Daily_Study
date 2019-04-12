@@ -7,9 +7,9 @@
     tools:context=".example01_fragment.FragmentExampleActivity">
 
     <LinearLayout
-        android:id="@+id/practice_linear_layout"
+        android:id="@+id/linear_layout_do_switch_fragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical" />
 

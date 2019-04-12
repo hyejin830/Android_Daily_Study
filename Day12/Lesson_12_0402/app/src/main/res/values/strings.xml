@@ -78,5 +78,7 @@
     <!-- Button -->
     <string name="btn_login">로그인</string>
     <string name="btn_join">회원가입</string>
+    <string name="text_view_of_activity">액티비티의 텍스트뷰</string>
+    <string name="input_success">입력 완료</string>
 
 </resources>

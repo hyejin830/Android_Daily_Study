@@ -13,6 +13,7 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.example.passivefirebaseexample.MainActivity;
+import com.example.passivefirebaseexample.R;
 import com.google.firebase.messaging.RemoteMessage;
 
 public class MyFireBaseMessagingService extends com.google.firebase.messaging.FirebaseMessagingService {
@@ -26,10 +27,8 @@ public class MyFireBaseMessagingService extends com.google.firebase.messaging.Fi
         String title = remoteMessage.getNotification().getTitle();
         String message = remoteMessage.getNotification().getBody();
 
-        Log.d(TAG + "title", title);
-        Log.d(TAG + "content", message);
-
-        //Log.d("받은 메세지", remoteMessage.getNotification().getBody());
+        Log.d(TAG + getString(R.string.log_title), title);
+        Log.d(TAG + getString(R.string.log_cotent), message);
 
         sendNotification(title, message);
     }
@@ -44,8 +43,8 @@ public class MyFireBaseMessagingService extends com.google.firebase.messaging.Fi
 
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        String name = "NOTIFICATION";
-        String channel_id = "fcm_default_channel";
+        String name = getString(R.string.notification_text);
+        String channel_id = getString(R.string.fcm_default_channel);
 
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

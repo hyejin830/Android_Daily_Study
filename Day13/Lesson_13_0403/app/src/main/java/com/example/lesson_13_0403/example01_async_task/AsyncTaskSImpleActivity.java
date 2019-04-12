@@ -1,8 +1,8 @@
 package com.example.lesson_13_0403.example01_async_task;
 
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.example.lesson_13_0403.R;
@@ -15,7 +15,9 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class AsyncTaskSImpleActivity extends AppCompatActivity {
+public class AsyncTaskSimpleActivity extends AppCompatActivity {
+
+    private static final String TAG = "AsyncTaskSimple";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +35,9 @@ public class AsyncTaskSImpleActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
 
             URL url = null;
+            String resultMessage = "";
             try {
-                url = new URL("http://192.168.0.205:8080/Project0403/test.jsp");
+                url = new URL("http://ip Address:8080/Project0403/test.jsp");
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("POST");
 
@@ -58,7 +61,7 @@ public class AsyncTaskSImpleActivity extends AppCompatActivity {
                         buffer.append(line);
                     }
                 } else {
-                    Log.i("hyejin 통신 결과", connection.getResponseCode() + "에러");
+                    Log.i(TAG, "통신 결과 : " + connection.getResponseCode() + "에러");
                 }
 
 
@@ -68,8 +71,9 @@ public class AsyncTaskSImpleActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
+            resultMessage = getString(R.string.async_task_success);
 
-            return "비동기 작업 완료";
+            return resultMessage;
         }
     }
 }

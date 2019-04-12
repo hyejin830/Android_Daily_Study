@@ -9,4 +9,16 @@
     <string name="start_music">음악 시작</string>
     <string name="stop_music">음악 중단</string>
     <string name="firebase_practice">FireBase Practice</string>
+    <string name="log_test_text">:test</string>
+    <string name="on_create_method">onCreate()</string>
+    <string name="on_start_command_method">onStartCommand()</string>
+    <string name="on_destroy_method">onDestroy()</string>
+    <string name="start_service_method">startService()</string>
+    <string name="stop_service_method">stopService()</string>
+    <string name="token_create">토큰 생성</string>
+    <string name="token_value">token =</string>
+    <string name="log_title">title</string>
+    <string name="log_cotent">content</string>
+    <string name="notification_text">NOTIFICATION</string>
+    <string name="fcm_default_channel">fcm_default_channel</string>
 </resources>

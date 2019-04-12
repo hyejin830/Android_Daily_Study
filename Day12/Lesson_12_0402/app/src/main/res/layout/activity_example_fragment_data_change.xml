@@ -10,13 +10,13 @@
         android:id="@+id/tv_do_access_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="액티비티의 텍스트뷰"
-        android:textSize="30dp" />
+        android:text="@string/text_view_of_activity"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:id="@+id/example_data_change_linear_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical" />
 
@@ -25,21 +25,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/change_first_fragment_text"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btn_do_change_second_fragment_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/change_second_fragment_text"
-        android:textSize="30dp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btn_do_change_fragment_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/change_fragment"
-        android:textSize="30dp" />
-
+        android:textSize="30sp" />
 
 </LinearLayout>

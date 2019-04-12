@@ -42,7 +42,7 @@ public class MessageExampleActivity extends AppCompatActivity implements View.On
         linearLayoutManager = new LinearLayoutManager(this);
         viewMessageWindowRecyclerView.setLayoutManager(linearLayoutManager);
 
-        messageRecyclerViewAdapter = new MessageRecyclerViewAdapter(messageModelArrayList, "user1");
+        messageRecyclerViewAdapter = new MessageRecyclerViewAdapter(messageModelArrayList, getString(R.string.user_name_1));
         viewMessageWindowRecyclerView.setAdapter(messageRecyclerViewAdapter);
     }
 
@@ -64,9 +64,8 @@ public class MessageExampleActivity extends AppCompatActivity implements View.On
                 messageModelArrayList.add(new MessageModel(getString(R.string.user_name_1),
                         inputMessageEditText.getText().toString()));
 
-                messageRecyclerViewAdapter.notifyDataSetChanged();
 
-                //viewMessageWindowRecyclerView.scrollToPosition(100);
+                messageRecyclerViewAdapter.notifyDataSetChanged();
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -79,7 +78,7 @@ public class MessageExampleActivity extends AppCompatActivity implements View.On
         }
     }
 
-    void sendMessage(String fromEmail, String toEmail, String message) {
-
+    private void sendMessage(String fromEmail, String toEmail, String message) {
+        // 다음에
     }
 }

@@ -4,4 +4,5 @@
     <string name="send_notification_example">send notification example</string>
     <string name="notification_select_activity">알림 창 선택하면 실행되는 액티비티</string>
     <string name="send_notification_async_task_practice">send notification async task practice</string>
+    <string name="send_jsp_file_name">send</string>
 </resources>

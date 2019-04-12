@@ -21,7 +21,7 @@ public class FireBasePracticeActivity extends AppCompatActivity {
         token = FirebaseInstanceId.getInstance().getToken();
 
         if (token != null) {
-            Log.d(TAG + "토큰 생성", "token =" + token);
+            Log.d(TAG + getString(R.string.token_create), getString(R.string.token_value) + token);
         }
     }
 }
